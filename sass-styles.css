@@ -1,0 +1,47 @@
+/* Colors Variables */
+/* HEADER */
+/* Top Info-bars */
+#top-bar {
+  margin: 0;
+  background-color: #292929;
+  color: white;
+  padding: 16px; }
+  #top-bar .col-9 {
+    text-align: right; }
+
+#top-info {
+  padding-bottom: 50px;
+  padding-top: 50px; }
+  #top-info .info-card {
+    margin-left: auto; }
+    #top-info .info-card:hover i {
+      color: #292929; }
+    #top-info .info-card div {
+      display: inline-block;
+      padding: 0;
+      vertical-align: middle; }
+    #top-info .info-card h4 {
+      font-size: 18px; }
+    #top-info .info-card i {
+      font-size: 30px;
+      color: #fdc716;
+      margin-top: 50%;
+      transform: translateY(-50%);
+      transition: color .3s ease-in-out; }
+    #top-info .info-card .col-2 {
+      border: dashed 1px #fdc716;
+      height: 50px;
+      width: 50px;
+      text-align: center;
+      border-radius: 50%; }
+
+/* Navbar */
+.navbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  width: 90%;
+  background-color: #292929; }
