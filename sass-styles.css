@@ -45,3 +45,9 @@
   display: inline-block;
   width: 90%;
   background-color: #292929; }
+
+/* About Us */
+#about-us {
+  background-color: rgba(248, 249, 249, 0.69); }
+  #about-us h2 span {
+    color: #fdc716; }

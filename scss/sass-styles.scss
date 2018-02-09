@@ -2,6 +2,7 @@
 $primary-color: #fdc716;
 $bars-color: #292929;
 $footer-bg: #252525;
+$about-bg: rgba(248, 249, 249, 0.69);
 
 /* HEADER */
 
@@ -72,4 +73,14 @@ $footer-bg: #252525;
 	display: inline-block;
 	width: 90%;
 	background-color: $bars-color;
+}
+
+/* About Us */
+
+#about-us {
+	background-color: $about-bg;
+
+	h2 span {
+		color: $primary-color;
+	}
 }

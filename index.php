@@ -25,9 +25,19 @@ get_header(); ?>
 			</div>
 		</div>
 
-		<div class="container"  id="about-us">
+		<!-- About Us -->
+		<div class="container-fluid"  id="about-us">
 			<div class="row">
-				<div class=""></div>
+				<div class="col-6">
+					<img src="http://tonatheme.com/newwp/factory/wp-content/uploads/2017/07/1.png" alt="" class="img-fluid">
+				</div>
+				<div class="col-6 row">
+					<h2>About Our <span>Factory & industries</span></h2>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab quaerat exercitationem ducimus odit laborum libero aperiam porro, assumenda, quos quisquam omnis atque, nobis molestias consequuntur ratione vel consectetur nemo soluta!</p>
+					<div class="col-4 statistic">icon and info</div>
+					<div class="col-4 statistic">icon and info</div>
+					<div class="col-4 statistic">icon and info</div>			
+				</div>
 			</div>
 		</div>
 
