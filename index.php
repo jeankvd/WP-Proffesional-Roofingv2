@@ -31,39 +31,72 @@ get_header(); ?>
 				<div class="col-6">
 					<img src="http://tonatheme.com/newwp/factory/wp-content/uploads/2017/07/1.png" alt="" class="img-fluid">
 				</div>
-				<div class="col-6 row">
+				<div class="col-6">
 					<h2>About Our <span>Factory & industries</span></h2>
 					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab quaerat exercitationem ducimus odit laborum libero aperiam porro, assumenda, quos quisquam omnis atque, nobis molestias consequuntur ratione vel consectetur nemo soluta!</p>
-					<div class="col-4 statistic">icon and info</div>
-					<div class="col-4 statistic">icon and info</div>
-					<div class="col-4 statistic">icon and info</div>			
+					<div class="row">
+						<div class="col-4 statistic">icon and info</div>
+						<div class="col-4 statistic">icon and info</div>
+						<div class="col-4 statistic">icon and info</div>			
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Our Services -->
+		<div class="container-fluid" id="our-services">
+			<div class="row">
+				<div class="col-4">
+					<h2 class="title-underline">Our Services</h2>
+				</div>
+				<div class="col-8">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti molestiae officiis numquam magni. Officiis debitis aliquam neque optio placeat! </p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-4">
+					<img src="http://tonatheme.com/newwp/factory/wp-content/uploads/2017/07/1-1.jpg" alt="" class="img-fluid">
+					<h4>Agricultural Engineering</h4>
+					<p>We develop and design new procedures, tools systems for agricultural products environments.</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Latest Projects -->
+		<div class="container-fluid" id="latest-projects">
+			<h2 class="title-underline">Latest Projects</h2>
+			<div class="owl-carousel">
+				<div class="project">
+					<img src="http://tonatheme.com/newwp/factory/wp-content/uploads/2017/07/p2.jpg" alt="" class="img-fluid">
+					<div class="project-overlay">
+					</div>
+					<h6>Multi String Project</h6>
+					<span>Latest Projects</span>
 				</div>
 			</div>
 		</div>
 
 
+
+		<!-- Blog -->
+
+		<div class="container">
+			<div class="row">
 		<?php
 		if ( have_posts() ) :
 
 			if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
 
 			<?php
 			endif;
-
 			/* Start the Loop */
-			while ( have_posts() ) : the_post();
+			while ( have_posts() ) : the_post();?>
 
-				/*
-				 * Include the Post-Format-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_format() );
+			<div class="col-4">
+				<img src="http://tonatheme.com/newwp/factory/wp-content/uploads/2017/07/1-2.jpg" alt="">
+			</div>
 
-			endwhile;
+			<?php endwhile;
 
 			the_posts_navigation();
 
@@ -72,10 +105,11 @@ get_header(); ?>
 			get_template_part( 'template-parts/content', 'none' );
 
 		endif; ?>
+		</div>
+	</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();

@@ -2,9 +2,49 @@
 $primary-color: #fdc716;
 $bars-color: #292929;
 $footer-bg: #252525;
+$default-text: #222222;
+$paragraph-text: #848484;
 $about-bg: rgba(248, 249, 249, 0.69);
+$light-header: #fff;
 
-/* HEADER */
+
+/* General */
+
+body {
+	color: $default-text;
+	-webkit-font-smoothing: antialiased;
+}
+
+p {
+	color: $paragraph-text;
+}
+
+.title-underline {
+	position: relative;
+}
+
+.title-underline::after {
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 70px;
+	height: 1px;
+	background-color: #f8b864;
+}
+
+%parallax {
+	/* Full height */
+	height: 100%; 
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* Header */
 
 /* Top Info-bars */
 #top-bar { 
@@ -82,5 +122,82 @@ $about-bg: rgba(248, 249, 249, 0.69);
 
 	h2 span {
 		color: $primary-color;
+	}
+}
+
+/* Our Services */
+
+#our-services {
+	margin: 7% 0;
+}
+
+/* Latest Projects */
+
+#latest-projects {
+	color: $light-header;
+	background-image: url("http://tonatheme.com/newwp/factory/wp-content/uploads/2017/07/5-1.jpg");
+	@extend %parallax;
+}
+
+.project {
+	position: relative;
+	overflow: hidden;
+
+	&:hover { 
+		
+		.project-overlay {
+			width: 100%;
+
+			&::after {			
+				opacity: 1;
+				transition: opacity 0s ease-in .3s;	
+			}
+		}
+
+		h6, span {
+			transition: all .1s ease-out .3s;			
+			opacity: 1;
+		}
+	}
+
+	h6 , span {
+		opacity: 0;
+	}
+
+	h6 {
+		position: absolute;
+		bottom: 20%;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	span {
+		position: absolute;
+		bottom: 10%;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	&-overlay {
+		
+		position: absolute;
+		height: 100%;
+		width: 0;
+		overflow: hidden;
+		top: 0;
+		left: 0;
+		background-color: rgba(0,0,0,.6);
+		transition: width .3s ease-in-out;	
+
+		&::after {
+			opacity: 0;
+			border: 4px solid $primary-color;
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+		}
 	}
 }
