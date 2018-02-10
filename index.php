@@ -93,7 +93,11 @@ get_header(); ?>
 			while ( have_posts() ) : the_post();?>
 
 			<div class="col-4">
-				<img src="http://tonatheme.com/newwp/factory/wp-content/uploads/2017/07/1-2.jpg" alt="">
+				<img src="http://tonatheme.com/newwp/factory/wp-content/uploads/2017/07/1-2.jpg" alt="" class="img-fluid">
+				<h6>Materials & Manufacturing</h6>
+				<span>by admin | 0 comment | 11 July</span>
+				<p>Except to obtain some advantage from it? But who has any right to find to enjoy a pleasure.</p>
+				<a href="#">Read More</a>
 			</div>
 
 			<?php endwhile;
@@ -105,6 +109,36 @@ get_header(); ?>
 			get_template_part( 'template-parts/content', 'none' );
 
 		endif; ?>
+		</div>
+	</div>
+
+	<!-- Contact Us -->
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-5">
+				<h2 class="title-underline">Request A Callback</h2>
+				<p>Have You Any Question About Us?
+
+					Any kind of business solution and consultion hesitate to contact with us for customer support. We are love to hear from you
+
+
+					Phone & Email: For any information contact with us through our Email and you can also contact with directe by call us in this number (+880) 1723801729
+
+
+					Office Hours: We are alwyes open excpet saturday & Sunday from 10:00am to 8:00pm
+				</p>
+			</div>
+			<div class="col-7">
+				<form action="">
+					<input type="name">
+					<input type="email">
+					<input type="phone">
+					<input type="text">
+					<input type="text">
+					<input type="button" value="">
+				</form>
+			</div>
 		</div>
 	</div>
 
