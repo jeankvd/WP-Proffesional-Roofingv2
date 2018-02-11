@@ -59,23 +59,23 @@ get_header(); ?>
                         'post_type' => 'Services'
                     )
                     ); ?>
-                    <?php if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
+					<?php
+					$i = 0;
+					if ( $loop->have_posts() ) : while ( $loop->have_posts() && $i < 6 ) : $loop->the_post(); ?>
 
                     <div class="col-4">
-                        <img src="<?php the_field(''); ?>" alt="">
+                        <img src="<?php the_post_thumbnail_url(); ?>" alt="" class="img-fluid">
+						<h4><?php the_title(); ?></h4>
+						<p><?php the_field('excerpt'); ?></p>
                     </div>
 
+					<?php $i++; ?>
                     <?php endwhile; ?>
 
                     <?php else: ?>
                         <h3>No Services Were Found</h3>
                     <?php endif; ?>
-                    <?php wp_reset_postdata(); ?>
-				<div class="col-4">
-					<img src="http://tonatheme.com/newwp/factory/wp-content/uploads/2017/07/1-1.jpg" alt="" class="img-fluid">
-					<h4>Agricultural Engineering</h4>
-					<p>We develop and design new procedures, tools systems for agricultural products environments.</p>
-				</div>
+                    <?php wp_reset_postdata(); ?> 
 			</div>
 		</div>
 
@@ -83,12 +83,31 @@ get_header(); ?>
 		<div class="container-fluid" id="latest-projects">
 			<h2 class="title-underline"><?php the_field('projects_title'); ?></h2>
 			<div class="owl-carousel">
+			<?php $loop = new WP_Query(
+                    array(
+                        'post_type' => 'Projects'
+                    )
+                    ); ?>
+					<?php if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+                    <div class="project">
+                        <img src="<?php the_post_thumbnail_url(); ?>" alt="" class="img-fluid">
+						<div class="project-overlay">
+						</div>
+						<h6><?php the_title(); ?></h6>
+						<span>Latest Projects</span>
+                    </div>
+                    <?php endwhile; ?>
+
+                    <?php else: ?>
+                        <h3>No Projects Were Found</h3>
+                    <?php endif; ?>
+                <?php wp_reset_postdata(); ?> 
 				<div class="project">
 					<img src="http://tonatheme.com/newwp/factory/wp-content/uploads/2017/07/p2.jpg" alt="" class="img-fluid">
 					<div class="project-overlay">
 					</div>
 					<h6>Multi String Project</h6>
-					<span>Latest Projects</span>
 				</div>
 			</div>
 		</div>
@@ -97,36 +116,22 @@ get_header(); ?>
 
 		<!-- Blog -->
 
-		<div class="container">
-			<div class="row">
-                <h2><?php the_field('blog_title'); ?></h2>
+		<div class="container" id="blog">
+				<div class="row">
 		<?php
-		if ( have_posts() ) :
+		$temp = $wp_query; $wp_query= null;
+		$wp_query = new WP_Query(); $wp_query->query('posts_per_page=3');
+		while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 
-			if ( is_home() && ! is_front_page() ) : ?>
+		<div class="col-4">
+			<img src="<?php the_post_thumbnail_url(); ?>" alt="" class="img-fluid">
+			<h6><?php the_title();?></h6>
+			<span>by <?php the_author();?> | <?php the_date('F j');?></span>
+			<p><?php the_excerpt(); ?></p>
+		</div>
 
-			<?php
-			endif;
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();?>
-
-			<div class="col-4">
-				<img src="http://tonatheme.com/newwp/factory/wp-content/uploads/2017/07/1-2.jpg" alt="" class="img-fluid">
-				<h6>Materials & Manufacturing</h6>
-				<span>by admin | 0 comment | 11 July</span>
-				<p>Except to obtain some advantage from it? But who has any right to find to enjoy a pleasure.</p>
-				<a href="#">Read More</a>
-			</div>
-
-			<?php endwhile;
-
-			the_posts_navigation();
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif; ?>
+		<?php endwhile; ?>
+		<?php wp_reset_query(); ?>
 		</div>
 	</div>
 
