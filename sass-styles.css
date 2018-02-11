@@ -1,4 +1,4 @@
-/* Colors Variables */
+/* Color Variables */
 /* General */
 body {
   color: #222222;
@@ -19,7 +19,7 @@ p {
   height: 1px;
   background-color: #f8b864; }
 
-#latest-projects {
+#latest-projects, #contact-us {
   /* Full height */
   height: 100%;
   /* Create the parallax scrolling effect */
@@ -131,3 +131,30 @@ p {
       left: 0;
       height: 100%;
       width: 100%; }
+
+/* Contact Us */
+#contact-us {
+  color: #fff;
+  padding: 40px;
+  background-image: url("http://tonatheme.com/newwp/factory/wp-content/uploads/2017/07/4-1.jpg"); }
+  #contact-us input, #contact-us textarea {
+    color: #fff;
+    margin: 10px auto;
+    padding: 18px;
+    background-color: transparent; }
+
+/* Footer */
+footer {
+  color: #fff;
+  background-color: #252525; }
+  footer ul {
+    margin: 0; }
+  footer li {
+    list-style: none; }
+    footer li::before {
+      content: "< "; }
+    footer li:hover {
+      color: #fdc716; }
+
+#footer-bottom {
+  background-color: #1a1a1a; }

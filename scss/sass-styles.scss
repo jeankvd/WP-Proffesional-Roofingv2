@@ -1,8 +1,9 @@
-/* Colors Variables */
+/* Color Variables */
 $primary-color: #fdc716;
 $bars-color: #292929;
 $footer-bg: #252525;
 $default-text: #222222;
+$footer-bottom: #1a1a1a;
 $paragraph-text: #848484;
 $about-bg: rgba(248, 249, 249, 0.69);
 $light-header: #fff;
@@ -200,4 +201,47 @@ p {
 			width: 100%;
 		}
 	}
+}
+
+/* Contact Us */
+
+#contact-us {
+	color: $light-header;
+	padding: 40px ;
+	background-image: url("http://tonatheme.com/newwp/factory/wp-content/uploads/2017/07/4-1.jpg");
+	@extend %parallax;
+
+	input, textarea {
+		color: $light-header;
+		margin: 10px auto;
+		padding: 18px;
+		background-color: transparent;
+	}
+}
+
+/* Footer */
+
+footer {
+	color: $light-header;
+	background-color: $footer-bg;
+
+	ul {
+		margin: 0;
+	}
+
+	li {
+		list-style: none;
+
+		&::before {
+			content: "< ";
+		}
+
+		&:hover {
+			color: $primary-color;
+		}
+	}
+}
+
+#footer-bottom {
+	background-color: $footer-bottom;
 }

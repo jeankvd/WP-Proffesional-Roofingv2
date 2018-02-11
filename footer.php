@@ -13,18 +13,35 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'theme-boilerplate' ) ); ?>"><?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'theme-boilerplate' ), 'WordPress' );
-			?></a>
-			<span class="sep"> | </span>
-			<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'theme-boilerplate' ), 'theme-boilerplate', '<a href="http://underscores.me/">Underscores.me</a>' );
-			?>
-		</div><!-- .site-info -->
+
+
+	<footer class="site-footer container-fluid">
+		<div class="row">
+			<div class="col-3">
+				<h2>Logo</h2>
+			</div>
+			<div class="col-3">
+				<h4>Services</h4>
+				<ul>
+					<li>Material Science</li>
+					<li>Material Science</li>
+					<li>Material Science</li>
+					<li>Material Science</li>
+					<li>Material Science</li>
+					<li>Material Science</li>
+				</ul>
+			</div>
+			<div class="col-3">
+				<h2>Recent News</h2>
+			</div>
+			<div class="col-3">
+				<h2>Subscribe uS</h2>
+			</div>
+		</div>
+		<div id="footer-bottom">
+			<span>&copy 2018 Jean Villalobos</span>
+			<div class="bottom-menu"></div>
+		</div>		
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

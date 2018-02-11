@@ -20,7 +20,7 @@ get_header(); ?>
 		<main id="main" class="site-main">
 		<div class="jumbotron jumbotron-fluid" id="">
 			<div class="container">
-				<h1 class="display-3">Fluid le jumbotron</h1>
+				<h1 class="display-3">Fluid sjumbotron</h1>
 				<p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
 			</div>
 		</div>
@@ -29,11 +29,11 @@ get_header(); ?>
 		<div class="container-fluid"  id="about-us">
 			<div class="row">
 				<div class="col-6">
-					<img src="http://tonatheme.com/newwp/factory/wp-content/uploads/2017/07/1.png" alt="" class="img-fluid">
+                    <img src="<?php the_field('about_us_image'); ?>" alt="" class="img-fluid">
 				</div>
 				<div class="col-6">
-					<h2>About Our <span>Factory & industries</span></h2>
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab quaerat exercitationem ducimus odit laborum libero aperiam porro, assumenda, quos quisquam omnis atque, nobis molestias consequuntur ratione vel consectetur nemo soluta!</p>
+					<h2><?php the_field('about_us_first_title');?>&nbsp;<span><?php the_field('about_us_second_title'); ?></span></h2>
+					<p><?php the_field('about_us_text'); ?></p>
 					<div class="row">
 						<div class="col-4 statistic">icon and info</div>
 						<div class="col-4 statistic">icon and info</div>
@@ -47,13 +47,30 @@ get_header(); ?>
 		<div class="container-fluid" id="our-services">
 			<div class="row">
 				<div class="col-4">
-					<h2 class="title-underline">Our Services</h2>
+					<h2 class="title-underline"><?php the_field('services_title'); ?></h2>
 				</div>
 				<div class="col-8">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti molestiae officiis numquam magni. Officiis debitis aliquam neque optio placeat! </p>
+					<p><?php the_field('services_text'); ?></p>
 				</div>
 			</div>
 			<div class="row">
+                <?php $loop = new WP_Query(
+                    array(
+                        'post_type' => 'Services'
+                    )
+                    ); ?>
+                    <?php if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+                    <div class="col-4">
+                        <img src="<?php the_field(''); ?>" alt="">
+                    </div>
+
+                    <?php endwhile; ?>
+
+                    <?php else: ?>
+                        <h3>No Services Were Found</h3>
+                    <?php endif; ?>
+                    <?php wp_reset_postdata(); ?>
 				<div class="col-4">
 					<img src="http://tonatheme.com/newwp/factory/wp-content/uploads/2017/07/1-1.jpg" alt="" class="img-fluid">
 					<h4>Agricultural Engineering</h4>
@@ -64,7 +81,7 @@ get_header(); ?>
 
 		<!-- Latest Projects -->
 		<div class="container-fluid" id="latest-projects">
-			<h2 class="title-underline">Latest Projects</h2>
+			<h2 class="title-underline"><?php the_field('projects_title'); ?></h2>
 			<div class="owl-carousel">
 				<div class="project">
 					<img src="http://tonatheme.com/newwp/factory/wp-content/uploads/2017/07/p2.jpg" alt="" class="img-fluid">
@@ -82,6 +99,7 @@ get_header(); ?>
 
 		<div class="container">
 			<div class="row">
+                <h2><?php the_field('blog_title'); ?></h2>
 		<?php
 		if ( have_posts() ) :
 
@@ -117,8 +135,8 @@ get_header(); ?>
 	<div class="container-fluid" id="contact-us">
 		<div class="row">
 			<div class="col-5">
-				<h2 class="title-underline">Request A Callback</h2>
-				<p>Have You Any Question About Us? Any kind of business solution and consultion hesitate to contact with us for customer support. We are love to hear from you Phone & Email: For any information contact with us through our Email and you can also contact with directe by call us in this number (+880) 1723801729 Office Hours: We are alwyes open excpet saturday & Sunday from 10:00am to 8:00pm
+				<h2 class="title-underline"><?php the_field('contact_us_title'); ?></h2>
+				<p><?php the_field('contact_us_text'); ?>
 				</p>
 			</div>
 			<div class="col-7">
