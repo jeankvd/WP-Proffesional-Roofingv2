@@ -23,6 +23,8 @@ get_header(); ?>
 	<div class="row">
 
 	<!-- PHP For Loop Here -->
+	<?php  ?>
+
 		<div class="col-6">
 			<div id="accordion">
 				<div class="card">
