@@ -1,15 +1,15 @@
 /* Color Variables */
 /* General */
 body {
-  font-family: 'Roboto', sans-serif;
-  color: #222222;
-  -webkit-font-smoothing: antialiased; }
+  font-family: 'Montserrat', sans-serif;
+  color: #222222; }
 
 p {
   color: #848484; }
 
 .title-underline {
-  position: relative; }
+  position: relative;
+  margin-bottom: 50px; }
 
 .title-underline::after {
   content: "";
@@ -110,6 +110,15 @@ p {
 /* Our Services */
 #our-services {
   margin: 7% 0; }
+  #our-services img {
+    height: 190px;
+    width: 370px; }
+  #our-services h4 {
+    font-size: 18px; }
+  #our-services p {
+    font-family: 'Hind';
+    font-size: 16px;
+    font-weight: 300; }
 
 /* Latest Projects */
 #latest-projects {
@@ -119,6 +128,9 @@ p {
 .project {
   position: relative;
   overflow: hidden; }
+  .project img {
+    height: 190px !important;
+    width: 270px !important; }
   .project:hover .project-overlay {
     width: 100%; }
     .project:hover .project-overlay::after {
@@ -157,6 +169,15 @@ p {
       left: 0;
       height: 100%;
       width: 100%; }
+
+/*  Blog */
+#blog {
+  margin-top: 5%; }
+  #blog .col-4 {
+    max-width: 30%;
+    margin-right: 15px;
+    padding: 0;
+    border: 1px solid #848484; }
 
 /* Contact Us */
 #contact-us {

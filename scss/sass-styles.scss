@@ -12,9 +12,8 @@ $light-header: #fff;
 /* General */
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	color: $default-text;
-	-webkit-font-smoothing: antialiased;
 }
 
 p {
@@ -23,6 +22,7 @@ p {
 
 .title-underline {
 	position: relative;
+	margin-bottom: 50px;
 }
 
 .title-underline::after {
@@ -34,6 +34,7 @@ p {
 	height: 1px;
 	background-color: #f8b864;
 }
+
 
 %parallax {
 	/* Full height */
@@ -165,6 +166,21 @@ p {
 
 #our-services {
 	margin: 7% 0;
+
+	img {
+		height: 190px;
+		width: 370px;
+	}
+
+	h4 {
+		font-size: 18px;
+	}
+
+	p {
+		font-family: 'Hind';
+		font-size: 16px;
+		font-weight: 300;
+	}
 }
 
 /* Latest Projects */
@@ -178,6 +194,11 @@ p {
 .project {
 	position: relative;
 	overflow: hidden;
+
+	img {
+		height: 190px!important;
+		width: 270px!important;
+	}
 
 	&:hover { 
 		
@@ -235,6 +256,23 @@ p {
 			height: 100%;
 			width: 100%;
 		}
+	}
+}
+
+/*  Blog */
+
+#blog {
+	margin-top: 5%;
+
+	.col-4 {
+		max-width: 30%;
+		margin-right: 15px;
+		padding: 0;
+		border: 1px solid $paragraph-text;
+	}
+
+	img {
+
 	}
 }
 

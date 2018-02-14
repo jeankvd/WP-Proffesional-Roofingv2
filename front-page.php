@@ -60,7 +60,7 @@ get_header(); ?>
 		<!-- Our Services -->
 		<div id="our-services">
 			<div class="container" >
-				<div class="row">
+				<div class="row ">
 					<div class="col-4">
 						<h2 class="title-underline"><?php the_field('services_title'); ?></h2>
 					</div>
