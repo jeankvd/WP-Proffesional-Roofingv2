@@ -126,6 +126,7 @@ function theme_boilerplate_scripts() {
 
 	wp_enqueue_script( 'owl-carousel-js', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js', array('jquery'), '20151215', true );
 	wp_enqueue_script( "font_awesome-js", 'https://use.fontawesome.com/abebc5126b.js', '', '' , true ); 
+	wp_enqueue_script( 'bootstrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', array('jquery'), '20151215', true );
 	wp_enqueue_script( 'main-js', get_template_directory_uri() . '/js/app.js', array('jquery'), '20151215', true );
 	
 
