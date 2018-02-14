@@ -22,30 +22,28 @@ get_header(); ?>
 <div class="container">
 	<div class="row">
 
-	<!-- PHP For Loop Here -->
-	<?php  ?>
-
 		<div class="col-6">
 			<div id="accordion">
+				<?php for($i = 1; $i < 7;$i++) { ?>
 				<div class="card">
-					<div class="card-header" id="headingOne">
+					<div class="card-header" id="heading<?php echo $i ?>">
 						<h5 class="mb-0">
-							<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-							Collapsible Group Item #1
+							<button class="btn btn-link" data-toggle="collapse" data-target="#collapse<?php echo $i ?>" aria-expanded="true" aria-controls="answer<?php echo $i ?>">
+								<?php the_field("question_$i"); ?>
 							</button>
 						</h5>
 					</div>
-
-					<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-						<div class="card-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					<div id="collapse<?php echo $i ?>" class="collapse" aria-labelledby="heading<?php echo $i ?>" data-parent="#accordion">
+						<div class="card-body"> <?php the_field("answer_$i"); ?>
 						</div>
 					</div>
-				</div> 
+				</div>
+				<?php } ?>
 			</div>
 		</div>
 
 		<div class="col-6" id="faq-form">
-			<form action="">
+			<form action="" class="row">
 				<h2><?php the_field('contact_form_title'); ?></h2>
 				<input type="text" name="name" placeholder="Name*">
 				<input type="email" name="email" id="">
