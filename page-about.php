@@ -51,31 +51,81 @@ get_header(); ?>
 </div>
 
 <div class="contact-call" style="background-image: url(<?php the_field('contact_call_background_image');?>);">
-    <h2>ACTION IS THE FOUNDATIONAL KEY TO ALL SUCCESS</h2>
-    <p>Where the kisses are hers and hers and his. Three's company too. Goodbye gray sky hello blue. There's nothing can hold me when I hold you. Feels so right it cant be wrong. Rockin' and rollin' all week long.</p>
-    <a class="btn">Contact Us</a>
+    <h2><?php the_field('contact_call_title');?></h2>
+    <p><?php the_field('contact_call_button_text');?></p>
+    <a class="btn"><?php the_field('contact_call_button_text');?></a>
 </div>
 
 <div class="perks">
-    <h2>Why Choose Us</h2>
-    <div>Perks here</div>
+    <h2><?php the_field('perks_title');?></h2>
+    <div class="perk">
+        <span class="icon-holder"><i class="fa fa-user" aria-hidden="true"></i></span>
+        <h4><?php the_field('perk_1_title');?></h4>
+        <p><?php the_field('perk_1_paragraph');?></p>
+    </div>
+    <div class="perk">
+        <span class="icon-holder"><i class="fa fa-user" aria-hidden="true"></i></span>
+        <h4><?php the_field('perk_2_title');?></h4>
+        <p><?php the_field('perk_2_paragraph');?></p>
+    </div>
+    <div class="perk">
+        <span class="icon-holder"><i class="fa fa-user" aria-hidden="true"></i></span>
+        <h4><?php the_field('perk_3_title');?></h4>
+        <p><?php the_field('perk_3_paragraph');?></p>
+    </div>
+    <div class="perk">
+        <span class="icon-holder"><i class="fa fa-user" aria-hidden="true"></i></span>
+        <h4><?php the_field('perk_4_title');?></h4>
+        <p><?php the_field('perk_4_paragraph');?></p>
+    </div>
+    <div class="perk">
+        <span class="icon-holder"><i class="fa fa-user" aria-hidden="true"></i></span>
+        <h4><?php the_field('perk_5_title');?></h4>
+        <p><?php the_field('perk_5_paragraph');?></p>
+    </div>
+    <div class="perk">
+        <span class="icon-holder"><i class="fa fa-user" aria-hidden="true"></i></span>
+        <h4><?php the_field('perk_6_title');?></h4>
+        <p><?php the_field('perk_6_paragraph');?></p>
+    </div>
 </div>
 
 
 <div class="feedback">
     <h2>Client Feedback</h2>
     <div class="owl-Carrousel">
-        Feedback Here
+        <div class="client">
+            <img src="<?php the_field('client_1_image');?>" alt="">
+            <h4><?php the_field('client_1_name');?></h4>
+            <h5><?php the_field('client_1_subheading');?></h5>
+            <p><?php the_field('client_1_feedback');?></p>
+        </div>
+        <div class="client">
+            <img src="<?php the_field('client_2_image');?>" alt="">
+            <h4><?php the_field('client_2_name');?></h4>
+            <h5><?php the_field('client_2_subheading');?></h5>
+            <p><?php the_field('client_2_feedback');?></p>
+        </div>
+        <div class="client">
+            <img src="<?php the_field('client_3_image');?>" alt="">
+            <h4><?php the_field('client_3_name');?></h4>
+            <h5><?php the_field('client_3_subheading');?></h5>
+            <p><?php the_field('client_3_feedback');?></p>
+        </div>
     </div>
 </div>
 
-<div class="newsletter">
-    <div>newsletter here</div>
+<div class="newsletter" style="background-image: url(<?php the_field('contact_call_background_image');?>);">
+    <div class="container" >
+        <h2><?php the_field('subscribe_call_title');?></h2>
+        <p><?php the_field('subscribe_call_paragraph');?></p>
+        <a href="" class="btn"><?php the_field('subscribe_call_button_text');?></a>
+    </div>
 </div>
 
 <div class="quote-banner">
-    <span>Have Any Questions or need any business consultation?</span>
-    <a href="#" class="btn">Request a Quote</a>
+    <span><?php the_field('quote_banner_text');?></span>
+    <a href="#" class="btn"><?php the_field('quote_button_text');?></a>
 </div>
 
 <?php
