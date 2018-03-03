@@ -56,57 +56,59 @@ get_header(); ?>
     <a class="btn"><?php the_field('contact_call_button_text');?></a>
 </div>
 
-<div class="perks">
-    <h2><?php the_field('perks_title');?></h2>
-    <div class="perk">
-        <span class="icon-holder"><i class="fa fa-user" aria-hidden="true"></i></span>
-        <h4><?php the_field('perk_1_title');?></h4>
-        <p><?php the_field('perk_1_paragraph');?></p>
-    </div>
-    <div class="perk">
-        <span class="icon-holder"><i class="fa fa-user" aria-hidden="true"></i></span>
-        <h4><?php the_field('perk_2_title');?></h4>
-        <p><?php the_field('perk_2_paragraph');?></p>
-    </div>
-    <div class="perk">
-        <span class="icon-holder"><i class="fa fa-user" aria-hidden="true"></i></span>
-        <h4><?php the_field('perk_3_title');?></h4>
-        <p><?php the_field('perk_3_paragraph');?></p>
-    </div>
-    <div class="perk">
-        <span class="icon-holder"><i class="fa fa-user" aria-hidden="true"></i></span>
-        <h4><?php the_field('perk_4_title');?></h4>
-        <p><?php the_field('perk_4_paragraph');?></p>
-    </div>
-    <div class="perk">
-        <span class="icon-holder"><i class="fa fa-user" aria-hidden="true"></i></span>
-        <h4><?php the_field('perk_5_title');?></h4>
-        <p><?php the_field('perk_5_paragraph');?></p>
-    </div>
-    <div class="perk">
-        <span class="icon-holder"><i class="fa fa-user" aria-hidden="true"></i></span>
-        <h4><?php the_field('perk_6_title');?></h4>
-        <p><?php the_field('perk_6_paragraph');?></p>
+<div class="perks container">
+    <h2><?php the_field('perks_title');?></h2>    
+    <div class="row">
+        <div class="perk col-4">
+            <span class="icon-holder"><i class="fa fa-user" aria-hidden="true"></i></span>
+            <h4><?php the_field('perk_1_title');?></h4>
+            <p><?php the_field('perk_1_paragraph');?></p>
+        </div>
+        <div class="perk col-4">
+            <span class="icon-holder"><i class="fa fa-user" aria-hidden="true"></i></span>
+            <h4><?php the_field('perk_2_title');?></h4>
+            <p><?php the_field('perk_2_paragraph');?></p>
+        </div>
+        <div class="perk col-4">
+            <span class="icon-holder"><i class="fa fa-user" aria-hidden="true"></i></span>
+            <h4><?php the_field('perk_3_title');?></h4>
+            <p><?php the_field('perk_3_paragraph');?></p>
+        </div>
+        <div class="perk col-4">
+            <span class="icon-holder"><i class="fa fa-user" aria-hidden="true"></i></span>
+            <h4><?php the_field('perk_4_title');?></h4>
+            <p><?php the_field('perk_4_paragraph');?></p>
+        </div>
+        <div class="perk col-4">
+            <span class="icon-holder"><i class="fa fa-user" aria-hidden="true"></i></span>
+            <h4><?php the_field('perk_5_title');?></h4>
+            <p><?php the_field('perk_5_paragraph');?></p>
+        </div>
+        <div class="perk col-4">
+            <span class="icon-holder"><i class="fa fa-user" aria-hidden="true"></i></span>
+            <h4><?php the_field('perk_6_title');?></h4>
+            <p><?php the_field('perk_6_paragraph');?></p>
+        </div>
     </div>
 </div>
 
 
-<div class="feedback">
+<div class="feedback container">
     <h2>Client Feedback</h2>
-    <div class="owl-Carrousel">
-        <div class="client">
+    <div class="owl-Carrousel row">
+        <div class="client col-4">
             <img src="<?php the_field('client_1_image');?>" alt="">
             <h4><?php the_field('client_1_name');?></h4>
             <h5><?php the_field('client_1_subheading');?></h5>
             <p><?php the_field('client_1_feedback');?></p>
         </div>
-        <div class="client">
+        <div class="client col-4">
             <img src="<?php the_field('client_2_image');?>" alt="">
             <h4><?php the_field('client_2_name');?></h4>
             <h5><?php the_field('client_2_subheading');?></h5>
             <p><?php the_field('client_2_feedback');?></p>
         </div>
-        <div class="client">
+        <div class="client col-4">
             <img src="<?php the_field('client_3_image');?>" alt="">
             <h4><?php the_field('client_3_name');?></h4>
             <h5><?php the_field('client_3_subheading');?></h5>
@@ -115,7 +117,7 @@ get_header(); ?>
     </div>
 </div>
 
-<div class="newsletter" style="background-image: url(<?php the_field('contact_call_background_image');?>);">
+<div class="newsletter" style="background-image: url(<?php the_field('subscribe_background_image');?>);">
     <div class="container" >
         <h2><?php the_field('subscribe_call_title');?></h2>
         <p><?php the_field('subscribe_call_paragraph');?></p>

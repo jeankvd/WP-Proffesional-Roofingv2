@@ -299,6 +299,22 @@ p {
 	width: 100%;
 }
 
+/* About Page */
+
+.contact-call, .newsletter {
+	color: $light-header;
+	text-align: center;
+	@extend %parallax;
+	padding: 10%;
+}
+
+.quote-banner {
+	background-color: $primary-color;
+	color: $light-header;
+	padding: 20px;
+}
+
+
 /* Footer */
 
 footer {

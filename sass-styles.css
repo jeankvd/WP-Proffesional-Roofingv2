@@ -20,7 +20,7 @@ p {
   height: 1px;
   background-color: #f8b864; }
 
-#latest-projects, #contact-us {
+#latest-projects, #contact-us, .contact-call, .newsletter {
   /* Full height */
   height: 100%;
   /* Create the parallax scrolling effect */
@@ -194,6 +194,17 @@ p {
 #faq-form input, #faq-form textarea {
   margin-bottom: 5%;
   width: 100%; }
+
+/* About Page */
+.contact-call, .newsletter {
+  color: #fff;
+  text-align: center;
+  padding: 10%; }
+
+.quote-banner {
+  background-color: #fdc716;
+  color: #fff;
+  padding: 20px; }
 
 /* Footer */
 footer {
