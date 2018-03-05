@@ -239,6 +239,13 @@ p {
     border-radius: 50%;
     color: #fff; }
 
+/* Blog */
+.date {
+  position: absolute;
+  background-color: #fdc716;
+  color: #fff;
+  padding: 10px; }
+
 /* Footer */
 footer {
   color: #fff;
