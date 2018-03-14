@@ -18,11 +18,16 @@ body {
 
 p {
 	color: $paragraph-text;
+	font-size: 16px;
+	font-weight: 300;
+	font-family: 'Hind', sans-serif;
 }
 
 .title-underline {
+	font-weight: bold;
+	padding-bottom: 15px;
+	font-size: 30px;
 	position: relative;
-	margin-bottom: 50px;
 }
 
 .title-underline::after {
@@ -140,12 +145,18 @@ p {
 	position: relative;
 	display: block;
 	font-size: 48px;
-	background-color: $primary-color;
+	background-color: $light-header;
 	width: 70px;
 	height: 70px;
 	margin: 0 auto;
 	border-radius: 50%;
-	box-shadow: 0px 3px 5px lighten($default-text, 40%);
+	box-shadow: 0px 5px 8px 4px rgba(0, 0, 0, 0.28);
+	transition: all .3s ease-in-out;	
+
+	&:hover {
+		background-color: $primary-color;
+		color: $light-header;
+	}
 
 
 
@@ -162,6 +173,17 @@ p {
 	display: block;
 }
 
+.statistic-number {
+	color: $primary-color;
+	margin-top: 10px;
+	font-weight: bold;
+	font-size: 2em;
+
+	&::after {
+		content: "+";
+	}
+}
+
 /* Our Services */
 
 #our-services {
@@ -174,6 +196,12 @@ p {
 
 	h4 {
 		font-size: 18px;
+		margin: 15px 0;
+		transition: color .3s ease-in-out;
+
+		&:hover {
+			color: $primary-color;
+		}
 	}
 
 	p {
@@ -187,6 +215,9 @@ p {
 
 #latest-projects {
 	color: $light-header;
+	$padding: 40px;
+	padding-top: $padding;
+	padding-bottom: $padding;
 	background-image: url("http://tonatheme.com/newwp/factory/wp-content/uploads/2017/07/5-1.jpg");
 	@extend %parallax;
 }

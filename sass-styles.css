@@ -5,11 +5,16 @@ body {
   color: #222222; }
 
 p {
-  color: #848484; }
+  color: #848484;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: 'Hind', sans-serif; }
 
 .title-underline {
-  position: relative;
-  margin-bottom: 50px; }
+  font-weight: bold;
+  padding-bottom: 15px;
+  font-size: 30px;
+  position: relative; }
 
 .title-underline::after {
   content: "";
@@ -91,12 +96,16 @@ p {
   position: relative;
   display: block;
   font-size: 48px;
-  background-color: #fdc716;
+  background-color: #fff;
   width: 70px;
   height: 70px;
   margin: 0 auto;
   border-radius: 50%;
-  box-shadow: 0px 3px 5px #888888; }
+  box-shadow: 0px 5px 8px 4px rgba(0, 0, 0, 0.28);
+  transition: all .3s ease-in-out; }
+  .icon-holder:hover {
+    background-color: #fdc716;
+    color: #fff; }
   .icon-holder i {
     position: absolute;
     top: 50%;
@@ -107,6 +116,14 @@ p {
   text-align: center;
   display: block; }
 
+.statistic-number {
+  color: #fdc716;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 2em; }
+  .statistic-number::after {
+    content: "+"; }
+
 /* Our Services */
 #our-services {
   margin: 7% 0; }
@@ -114,7 +131,11 @@ p {
     height: 190px;
     width: 370px; }
   #our-services h4 {
-    font-size: 18px; }
+    font-size: 18px;
+    margin: 15px 0;
+    transition: color .3s ease-in-out; }
+    #our-services h4:hover {
+      color: #fdc716; }
   #our-services p {
     font-family: 'Hind';
     font-size: 16px;
@@ -123,6 +144,8 @@ p {
 /* Latest Projects */
 #latest-projects {
   color: #fff;
+  padding-top: 40px;
+  padding-bottom: 40px;
   background-image: url("http://tonatheme.com/newwp/factory/wp-content/uploads/2017/07/5-1.jpg"); }
 
 .project {
