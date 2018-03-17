@@ -14,8 +14,36 @@ get_header(); ?>
 
 <div class="container">
     <div class="row">
-        <div class="col-3">
-        <?php get_sidebar(); ?>
+        <div class="col-3 sidebar-services">
+            <?php $loop = new WP_Query(
+                array(
+                    'post_type' => 'Services'
+                )
+                ); ?>
+                <?php
+                $i = 0;
+                if ( $loop->have_posts() ) : while ( $loop->have_posts() && $i < 6 ) : $loop->the_post(); ?>
+
+                <div class="side-service">
+                    <a href="<?php get_permalink();?>"><h4><?php the_title(); ?></h4></a>
+                </div>
+
+                <?php $i++; ?>
+                <?php endwhile; ?>
+                <?php endif; ?>
+                <?php wp_reset_postdata(); ?> 
+                <h4>Our Brochures</h4>
+                <div class="download">
+                    <span class="download-type">PDF</span>
+                    <span class="download-title">Our Brochure.pdf</span>
+                    <i class="fa fa-download" aria-hidden="true"></i>
+                </div>
+                <div class="download">
+                    <span class="download-type">TXT</span>
+                    <span class="download-title">Our Brochure.txt</span>
+                    <i class="fa fa-download" aria-hidden="true"></i>
+                </div>
+
         </div>
         <div class="col-9">
         <?php while ( have_posts() ) : the_post(); ?>

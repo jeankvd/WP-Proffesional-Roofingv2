@@ -187,7 +187,33 @@ p {
 
 .tab-content {
   border: solid 1px rgba(193, 202, 202, 0.69);
-  padding: 30px; }
+  padding: 30px;
+  margin-top: 1px; }
+
+/* Single Service Sidebar */
+.side-service {
+  background-color: rgba(221, 225, 225, 0.69);
+  padding: 10px;
+  margin-bottom: 2px; }
+  .side-service a {
+    text-decoration: none;
+    transition: all .2s ease-in-out; }
+  .side-service h4 {
+    font-size: 1.1rem;
+    font-weight: bold; }
+  .side-service:hover a {
+    color: #fdc716; }
+
+.download {
+  border: solid 1px rgba(221, 225, 225, 0.69);
+  padding: 10px;
+  margin-bottom: 2px; }
+  .download-type {
+    background-color: rgba(221, 225, 225, 0.69);
+    padding: 5px; }
+  .download i {
+    position: absolute;
+    right: 30px; }
 
 /* Latest Projects */
 #latest-projects {
