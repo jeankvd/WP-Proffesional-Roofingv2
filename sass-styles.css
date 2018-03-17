@@ -4,6 +4,9 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: #222222; }
 
+a {
+  color: inherit; }
+
 p {
   color: #848484;
   font-size: 16px;
@@ -141,6 +144,51 @@ p {
     font-size: 16px;
     font-weight: 300; }
 
+/*  Single Service */
+#provided-services .col-6:hover .service-icon {
+  color: #fff;
+  background-color: #fdc716; }
+
+#provided-services .service-info {
+  padding: 0 0 0 80px; }
+
+#provided-services .service-icon {
+  transition: all .2s ease-in-out;
+  background-color: rgba(234, 237, 237, 0.69);
+  height: 70px;
+  width: 70px;
+  text-align: center;
+  font-size: 2rem;
+  position: absolute;
+  color: #fdc716; }
+  #provided-services .service-icon i {
+    vertical-align: bottom; }
+
+.nav-tabs {
+  margin: 0;
+  border: none; }
+  .nav-tabs .nav-item {
+    background-color: rgba(240, 242, 242, 0.69);
+    border: none;
+    width: 33%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold; }
+  .nav-tabs .active {
+    border: none;
+    background-color: #fff;
+    border-top: solid 3px #fdc716;
+    border-color: #fdc716 !important;
+    border-radius: 0;
+    border-bottom: 0;
+    box-sizing: border-box; }
+  .nav-tabs .nav-item:not(:last-child) {
+    margin-right: 3px; }
+
+.tab-content {
+  border: solid 1px rgba(193, 202, 202, 0.69);
+  padding: 30px; }
+
 /* Latest Projects */
 #latest-projects {
   color: #fff;
@@ -218,11 +266,14 @@ p {
     margin: 10px auto;
     padding: 18px;
     background-color: transparent; }
+  #contact-us input[type="name"] {
+    border: solid 1px #fff;
+    border-radius: 3px; }
   #contact-us input[type="button"] {
     background-color: #fdc716;
     width: 100%;
     font-weight: bold;
-    font-size: 2rem; }
+    font-size: 1.8rem; }
 
 /* Faq */
 #faq-form input, #faq-form textarea {

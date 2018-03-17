@@ -17,6 +17,10 @@ body {
 	color: $default-text;
 }
 
+a {
+	color: inherit;
+}
+
 p {
 	color: $paragraph-text;
 	font-size: 16px;
@@ -212,6 +216,71 @@ p {
 	}
 }
 
+/*  Single Service */
+
+#provided-services {
+
+	.col-6 {
+		&:hover .service-icon {
+			color: $light-header;
+			background-color: $primary-color;
+		}
+	}
+
+	.service-info {
+		padding: 0 0 0 80px;
+	}
+
+	.service-icon {
+		transition: all .2s ease-in-out;
+		background-color: darken($about-bg, 5%);
+		height: 70px;
+		width: 70px;
+		text-align: center;
+		font-size: 2rem;
+		position: absolute;
+		color: $primary-color;
+
+		i {
+			vertical-align: bottom;
+		}
+	}
+}
+
+.nav-tabs {
+	margin: 0;
+	border: none;
+
+	.nav-item {
+		background-color: darken($about-bg, 3%);
+		border: none;
+		width: 33%;
+		text-align: center;
+		font-size: 1.2rem;
+		font-weight: bold;
+	}
+
+	.active {
+		border: none;
+		background-color: $light-header;
+		border-top: solid 3px $primary-color;
+		border-color: $primary-color!important;
+		border-radius: 0;
+		border-bottom: 0;
+		box-sizing: border-box;
+	}
+
+	.nav-item:not(:last-child) {
+		margin-right: 3px;
+	}
+
+}
+
+.tab-content {
+	border: solid 1px darken($about-bg, 20%);
+	padding: 30px;
+}
+
 /* Latest Projects */
 
 #latest-projects {
@@ -340,11 +409,16 @@ p {
 		background-color: transparent;
 	}
 
+	input[type="name"] {
+		border: solid 1px $light-header;
+		border-radius: 3px;
+	}	
+
 	input[type="button"] {
 		background-color: $primary-color;
 		width: 100%;
 		font-weight: bold;
-		font-size: 2rem;
+		font-size: 1.8rem;
 	}
 }
 
