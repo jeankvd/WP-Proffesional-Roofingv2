@@ -7,6 +7,7 @@ $footer-bottom: #1a1a1a;
 $paragraph-text: #848484;
 $about-bg: rgba(248, 249, 249, 0.69);
 $light-header: #fff;
+$blog-border: #f4f4f4;
 
 
 /* General */
@@ -253,6 +254,7 @@ p {
 	}
 
 	h6 {
+		font-size: 1.3rem;
 		position: absolute;
 		bottom: 20%;
 		left: 50%;
@@ -260,6 +262,7 @@ p {
 	}
 
 	span {
+		color: $primary-color;
 		position: absolute;
 		bottom: 10%;
 		left: 50%;
@@ -295,11 +298,26 @@ p {
 #blog {
 	margin-top: 5%;
 
-	.col-4 {
-		max-width: 30%;
-		margin-right: 15px;
-		padding: 0;
-		border: 1px solid $paragraph-text;
+	span {
+		color: darken($paragraph-text, 10%);
+		font-weight: 500;
+		font-size: .9rem;
+	}
+
+	h5 {
+		transition: color .3s ease-in-out;
+
+		&:hover {
+			color: $primary-color;
+		}
+	}
+
+	.blog-posts {
+		border: 1px solid $blog-border;
+	}
+
+	.blog-information {
+		padding: 20px;
 	}
 
 	img {
@@ -320,6 +338,13 @@ p {
 		margin: 10px auto;
 		padding: 18px;
 		background-color: transparent;
+	}
+
+	input[type="button"] {
+		background-color: $primary-color;
+		width: 100%;
+		font-weight: bold;
+		font-size: 2rem;
 	}
 }
 
@@ -372,6 +397,7 @@ p {
 
 		h6 {
 			top: 30%;
+			font-size: 2.5rem;
 		}
 
 		&:hover .project-overlay {

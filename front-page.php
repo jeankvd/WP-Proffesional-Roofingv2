@@ -135,17 +135,21 @@ get_header(); ?>
 		<!-- Blog -->
 		<div id="blog">
 			<div class="container" >
-					<div class="row">
+				<h2 class="title-underline">Latest News</h2>				<div class="row">
 			<?php
 			$temp = $wp_query; $wp_query= null;
 			$wp_query = new WP_Query(); $wp_query->query('posts_per_page=3');
 			while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 
 			<div class="col-4">
-				<img src="<?php the_post_thumbnail_url(); ?>" alt="" class="img-fluid">
-				<h6><?php the_title();?></h6>
-				<span>by <?php the_author();?> | <?php the_date('F j');?></span>
-				<p><?php the_excerpt(); ?></p>
+				<div class="blog-posts">
+					<img src="<?php the_post_thumbnail_url(); ?>" alt="" class="img-fluid">
+					<div class="blog-information">
+						<h5><?php the_title();?></h5>
+						<span>by <?php the_author();?> | <?php the_date('F j');?></span>
+						<p><?php the_excerpt(); ?></p>
+					</div>
+				</div>
 			</div>
 
 			<?php endwhile; ?>
@@ -170,7 +174,7 @@ get_header(); ?>
 						<input type="tel" name="tel" id="tel" class="col-5" placeholder="Phone">
 						<input type="text" name="subject" id="subject" class="col-5" placeholder="Subject">
 						<textarea class="col-11" name="message" id="message" placeholder="Your Message"></textarea>
-						<input type="button" value="Get In Contact">
+						<input type="button" value="Get In Contact" class="col-11">
 					</form>
 				</div>
 			</div>

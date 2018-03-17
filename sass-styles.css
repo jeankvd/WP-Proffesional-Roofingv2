@@ -162,11 +162,13 @@ p {
   .project h6, .project span {
     opacity: 0; }
   .project h6 {
+    font-size: 1.3rem;
     position: absolute;
     bottom: 20%;
     left: 50%;
     transform: translateX(-50%); }
   .project span {
+    color: #fdc716;
     position: absolute;
     bottom: 10%;
     left: 50%;
@@ -193,11 +195,18 @@ p {
 /*  Blog */
 #blog {
   margin-top: 5%; }
-  #blog .col-4 {
-    max-width: 30%;
-    margin-right: 15px;
-    padding: 0;
-    border: 1px solid #848484; }
+  #blog span {
+    color: #6b6b6b;
+    font-weight: 500;
+    font-size: .9rem; }
+  #blog h5 {
+    transition: color .3s ease-in-out; }
+    #blog h5:hover {
+      color: #fdc716; }
+  #blog .blog-posts {
+    border: 1px solid #f4f4f4; }
+  #blog .blog-information {
+    padding: 20px; }
 
 /* Contact Us */
 #contact-us {
@@ -209,6 +218,11 @@ p {
     margin: 10px auto;
     padding: 18px;
     background-color: transparent; }
+  #contact-us input[type="button"] {
+    background-color: #fdc716;
+    width: 100%;
+    font-weight: bold;
+    font-size: 2rem; }
 
 /* Faq */
 #faq-form input, #faq-form textarea {
@@ -240,7 +254,8 @@ p {
 #latest-projects-page .project {
   color: #fff; }
   #latest-projects-page .project h6 {
-    top: 30%; }
+    top: 30%;
+    font-size: 2.5rem; }
   #latest-projects-page .project:hover .project-overlay {
     height: 100%; }
   #latest-projects-page .project:hover .buttons {
