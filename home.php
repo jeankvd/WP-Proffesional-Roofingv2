@@ -28,9 +28,11 @@ get_header();
 			<div class="blog-post">
 				<span class="date"><?php the_date('F j');?></span>
 				<img src="<?php the_post_thumbnail_url("medium"); ?>" alt="" class="img-fluid">
-				<a href="<?php the_permalink();?>"><h3><?php the_title(); ?></h3></a>
-				<p><?php the_excerpt();?></p>
-				<span>by <?php the_author();?> | Blog </span>
+				<div class="blog-info">
+					<a href="<?php the_permalink();?>"><h5><?php the_title(); ?></h5></a>
+					<p><?php the_excerpt();?></p>
+				</div>					
+				<span class="blog-meta">by <?php the_author();?> | Blog </span>
 			</div>
 			<?php endwhile; endif; ?>
 		</div>

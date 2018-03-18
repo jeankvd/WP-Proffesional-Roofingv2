@@ -555,11 +555,40 @@ p {
 
 /* Blog */
 
+.blog-post{
+	position: relative;
+	border: solid 1px darken($about-bg, 10%);
+	margin-bottom: 20px;
+
+	&:hover .date {
+		left: 0;
+		top: 0;
+	}
+
+	&:hover img {
+		// transform: scale(1.1);
+	}
+}
+
+.blog-info {
+	padding: 15px;
+}
+
+.blog-meta {
+	display: block;
+	border-top: solid 1px darken($about-bg, 10%);
+	padding: 8px 15px;
+	color: $paragraph-text;
+}
+
 .date {
 	position: absolute;
 	background-color: $primary-color;
 	color: $light-header;
-	padding: 10px;
+	padding: 20px 10px;
+	left: 30px;
+	top: 30px;
+	transition: all .3s .1s ease-in-out;
 }
 
 
