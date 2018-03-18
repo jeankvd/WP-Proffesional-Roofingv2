@@ -332,16 +332,19 @@ p {
   color: #fff; }
   #latest-projects-page .project h6 {
     top: 30%;
-    font-size: 2.5rem; }
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%; }
   #latest-projects-page .project:hover .project-overlay {
     height: 100%; }
   #latest-projects-page .project:hover .buttons {
     opacity: 1;
-    bottom: 40%; }
+    bottom: 30%; }
 
 #latest-projects-page .buttons {
   position: absolute;
-  bottom: 20%;
+  bottom: 0%;
   opacity: 0;
   font-size: 2em;
   transition: all .3s .3s ease-in-out;
@@ -353,6 +356,10 @@ p {
     padding: 10px;
     border-radius: 50%;
     color: #fff; }
+
+/* Single Project */
+#single-latest-project .col-3 img {
+  margin-bottom: 15px; }
 
 /* Blog */
 .date {

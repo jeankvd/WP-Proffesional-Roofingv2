@@ -12,7 +12,7 @@ get_header(); ?>
 	<h2 class="mx-auto">Jumbotron</h2>
 </div>
 
-<div class="container">
+<div class="container" id="single-latest-project">
     <div class="row">
             <?php while ( have_posts() ) : the_post(); ?>
                 <div class="col-9">            
