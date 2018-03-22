@@ -29,6 +29,10 @@ p {
 	font-family: 'Hind', sans-serif;
 }
 
+.jumbotron {
+	margin: 0;
+}
+
 .title-underline {
 	font-weight: bold;
 	padding-bottom: 15px;
@@ -463,9 +467,45 @@ p {
 
 /* Faq */
 
+div[class="collapse show"] {	
+}
+
+.questions {
+
+	.card {
+		border: none;
+	}
+	.card-header {
+		margin: 10px 0;
+		border: none;
+	}
+}
+
 #faq-form input , #faq-form textarea {
 	margin-bottom: 5%;
 	width: 100%;
+	padding: 2%;
+	border-radius: 0;
+	border: none;
+	font-size: .95rem;
+}
+
+#faq-form {
+	background-color: $blog-border;	
+	padding: 5% ;
+
+	h4 {
+		font-weight: bold;
+	}
+
+	.btn {
+		background: $primary-color;
+		color: $light-header;
+		text-transform: uppercase;
+		font-weight: bold;
+		width: 100%;
+		padding: 2%;
+	}
 }
 
 /* About Page */

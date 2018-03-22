@@ -19,7 +19,7 @@ get_header(); ?>
 	<h2 class="mx-auto">Jumbotron</h2>
 </div>
 
-<div class="container">
+<div class="container questions">
 	<div class="row">
 
 		<div class="col-6">
@@ -44,11 +44,12 @@ get_header(); ?>
 
 		<div class="col-6" id="faq-form">
 			<form action="" class="row">
-				<h2><?php the_field('contact_form_title'); ?></h2>
+				<h4><?php the_field('contact_form_title'); ?></h4>
 				<input type="text" name="name" placeholder="Name*">
 				<input type="email" name="email" id="">
 				<input type="text" name="subject" id="">
 				<textarea name=""></textarea>
+				<a href="#" class="btn">Submit Now</a>
 			</form>
 		</div>
 	</div>
