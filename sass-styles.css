@@ -475,3 +475,16 @@ footer {
 
 #footer-bottom {
   background-color: #1a1a1a; }
+
+/* Media Queries */
+@media (max-width: 700px) {
+  /* Single Service */
+  .sidebar-services {
+    display: none; }
+  #provided-services .service-icon {
+    position: inherit;
+    margin: 0 auto; }
+  .service-info {
+    padding: 0 !important; }
+  .nav-tabs .nav-item:not(:last-child) {
+    margin-right: 0; } }

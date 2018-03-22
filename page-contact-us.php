@@ -25,6 +25,8 @@ get_header(); ?>
             <div class="col-9">
             </div>
             <div class="col-3">
+                <h4>Quick Contact</h4>
+                <p>If you are passionate about helping people: through education, or preventing then you</p>
             </div>
         </div>
     </div>

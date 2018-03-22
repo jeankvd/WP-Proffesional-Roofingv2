@@ -12,9 +12,9 @@ get_header(); ?>
 	<h2 class="mx-auto"><?php the_title();?></h2>
 </div>
 
-<div class="container">
+<div class="container single-service">
     <div class="row">
-        <div class="col-3 sidebar-services">
+        <div class="col-md-3 sidebar-services">
             <?php $loop = new WP_Query(
                 array(
                     'post_type' => 'Services'
@@ -45,7 +45,7 @@ get_header(); ?>
                 </div>
 
         </div>
-        <div class="col-9">
+        <div class="col-md-9 col-sm-12">
         <?php while ( have_posts() ) : the_post(); ?>
         <img src=" <?php the_post_thumbnail_url("medium"); ?> " alt="" class="img-responsive">
         <p> <?php the_content(); ?> </p>
