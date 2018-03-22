@@ -29,10 +29,10 @@ get_header(); ?>
 		<div id="about-us">
 			<div class="container" >
 				<div class="row">
-					<div class="col-6">
+					<div class="col-md-6 col-sm-12">
 						<img src="<?php the_field('about_us_image'); ?>" alt="" class="img-fluid">
 					</div>
-					<div class="col-6">
+					<div class="col-md-6 col-sm-12">
 						<h2><?php the_field('about_us_first_title');?>&nbsp;<span><?php the_field('about_us_second_title'); ?></span></h2>
 						<p><?php the_field('about_us_text'); ?></p>
 						<div class="row">
@@ -61,10 +61,10 @@ get_header(); ?>
 		<div id="our-services">
 			<div class="container" >
 				<div class="row ">
-					<div class="col-4">
+					<div class="col-md-4 col-sm-12">
 						<h2 class="title-underline"><?php the_field('services_title'); ?></h2>
 					</div>
-					<div class="col-8">
+					<div class="col-md-8 col-sm-12">
 						<p><?php the_field('services_text'); ?></p>
 					</div>
 				</div>
@@ -78,7 +78,7 @@ get_header(); ?>
 						$i = 0;
 						if ( $loop->have_posts() ) : while ( $loop->have_posts() && $i < 6 ) : $loop->the_post(); ?>
 
-						<div class="col-4">
+						<div class="col-md-4 col-sm-12">
 							<img src="<?php the_post_thumbnail_url(); ?>" alt="" class="img-fluid">
 							<h4><?php the_title(); ?></h4>
 							<p><?php the_field('excerpt'); ?></p>
@@ -141,7 +141,7 @@ get_header(); ?>
 			$wp_query = new WP_Query(); $wp_query->query('posts_per_page=3');
 			while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 
-			<div class="col-4">
+			<div class="col-md-4 col-sm-12">
 				<div class="blog-posts">
 					<img src="<?php the_post_thumbnail_url(); ?>" alt="" class="img-fluid">
 					<div class="blog-information">
@@ -162,19 +162,19 @@ get_header(); ?>
 	<div id="contact-us">
 		<div class="container" >
 			<div class="row">
-				<div class="col-5">
+				<div class="col-md-5 col-sm-12">
 					<h2 class="title-underline"><?php the_field('contact_us_title'); ?></h2>
 					<p><?php the_field('contact_us_text'); ?>
 					</p>
 				</div>
-				<div class="col-7">
+				<div class="col-md-7 col-sm-12">
 					<form action="" class="row">
-						<input type="name" name="name" id="name" class="col-5" placeholder="Your Name*">
-						<input type="email" name="email" id="email" class="col-5" placeholder="Your E-Mail*">
-						<input type="tel" name="tel" id="tel" class="col-5" placeholder="Phone">
-						<input type="text" name="subject" id="subject" class="col-5" placeholder="Subject">
-						<textarea class="col-11" name="message" id="message" placeholder="Your Message"></textarea>
-						<input type="button" value="Get In Contact" class="col-11">
+						<input type="name" name="name" id="name" class="col-md-5 col-sm-12" placeholder="Your Name*">
+						<input type="email" name="email" id="email" class="col-md-5 col-sm-12" placeholder="Your E-Mail*">
+						<input type="tel" name="tel" id="tel" class="col-md-5 col-sm-12" placeholder="Phone">
+						<input type="text" name="subject" id="subject" class="col-md-5 col-sm-12" placeholder="Subject">
+						<textarea class="col-md-11 col-sm-12" name="message" id="message" placeholder="Your Message"></textarea>
+						<input type="button" value="Get In Contact" class="col-md-11 col-sm-12">
 					</form>
 				</div>
 			</div>

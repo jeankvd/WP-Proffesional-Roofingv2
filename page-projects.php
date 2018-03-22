@@ -30,7 +30,7 @@ get_header(); ?>
                 ); ?>
                 <?php if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-                <div class="project-wrapper col-4">
+                <div class="project-wrapper col-md-4 col-sm-12">
                     <div class="project">
                         <img src="<?php the_post_thumbnail_url(); ?>" alt="" class="img-fluid">
                         <div class="project-overlay">
