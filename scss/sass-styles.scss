@@ -147,7 +147,7 @@ p {
 }
 
 
-.icon-holder {
+#about-us .icon-holder {
 	position: relative;
 	display: block;
 	font-size: 48px;
@@ -474,7 +474,20 @@ p {
 	color: $light-header;
 	text-align: center;
 	@extend %parallax;
-	padding: 10%;
+	padding: 8%;
+
+	p {
+		color: $light-header;
+	}
+}
+
+.contact-call .btn, .newsletter .btn {
+	color: inherit;
+	background-color: $primary-color;
+	border-radius: none;
+	text-transform: uppercase;
+	padding: 1%;
+	font-weight: bold;
 }
 
 .quote-banner {
@@ -483,6 +496,57 @@ p {
 	padding: 20px;
 }
 
+.perks, .feedback {
+	h2 {
+		text-align: center;
+
+		&::after {
+			right: 0;
+			margin: 0 auto;
+		}
+	}
+}
+
+.perk {
+	border: solid 1px $border;
+	margin: 10px 0;
+
+	h4 {
+		font-size: 1.2rem;
+		font-weight: bold;
+	}
+
+	.icon-holder {
+		position: absolute;
+		font-size: 2.5rem;
+		background-color: $blog-border;
+		color: $primary-color;
+		height: 60px;
+		width: 60px;
+		text-align: center;
+	}
+
+	&-info {
+		padding: 4% 5%;
+		margin-left: 70px;
+	}
+}
+
+.feedback {
+	p {
+		border: solid 1px $border;
+		padding: 10%;
+	}
+
+	img {
+		position: absolute;
+	}
+
+	h4, h5 {
+		margin-left: 20%;
+		display: inline-block;
+	}
+}
 
 /* Projects Page */
 
