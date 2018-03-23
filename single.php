@@ -15,12 +15,12 @@ get_header(); ?>
 <div class="container">
     <div class="row">
 			<?php while ( have_posts() ) : the_post(); ?>
-			<div class="col-9">			
+			<div class="col-md-9 col-sm-12">			
 				<img src=" <?php the_post_thumbnail_url("medium"); ?> " alt="" class="img-responsive">
 				<h1><?php the_title(); ?></h1>
 				<p> <?php the_content(); ?> </p>
 			</div>
-			<div class="col-3">
+			<div class="col-md-3 single-sidebar">
 				<?php get_sidebar();?>
 			</div>
 			<?php endwhile; // End of the loop.?>

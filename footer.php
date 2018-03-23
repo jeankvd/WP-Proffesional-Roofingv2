@@ -46,6 +46,21 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+<script>
+  function initMap() {
+    var uluru = {lat: 25.8100321, lng: -80.2360589};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 14,
+      center: uluru
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+  }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGWtW45JrxxhVCyHSfsyGW-B48fM4evww&callback=initMap">
+</script>
 
 </body>
 </html>
