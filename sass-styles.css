@@ -496,3 +496,8 @@ footer {
     display: none; } }
 
 /*  Map */
+#map {
+  position: sticky;
+  overflow: hidden;
+  height: 350px;
+  width: 100%; }

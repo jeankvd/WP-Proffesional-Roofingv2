@@ -67,12 +67,10 @@ get_header(); ?>
     </div>
 
     <!-- Map -->
-    <div id="map">
+    <div id="map-container">
+        <div id="map">
+        </div>
     </div>
-</div>
-
-<div class="map">
-    Map Here pls
 </div>
 
 <div class="quote-banner">
