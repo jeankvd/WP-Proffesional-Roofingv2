@@ -24,11 +24,12 @@
 
 <!-- Top Bar -->
 <div id="top-bar" class="container-fluid row">
-	<div class="col-3">
+	<div class="col-4">
 		Welcome to Proffesional Roofing Inc.
 	</div>
-	<div class="col-9">
-		clock Monday-Friday : 8:00 AM to 7:00 PM
+	<div class="col-8 schedule">
+		<i class="fa fa-clock-o" aria-hidden="true"></i>
+		Monday-Friday : 8:00 AM to 7:00 PM
 	</div>
 </div>
 <!-- Top Info -->

@@ -69,10 +69,15 @@ p {
 	margin: 0;
 	background-color: $bars-color;
 	color: white;
+	font-size: 12px;
 	padding: 16px;
 
-	.col-9 {
+	.schedule {
 		text-align: right;
+
+		i {
+			color: $primary-color;
+		}
 	}
 }
 
@@ -757,6 +762,36 @@ footer {
 
 	.single-sidebar {
 		display: none;
+	}
+}
+
+/* Contact Us Page */
+
+.contact-us {
+	h2 span {
+		color: $primary-color;
+	}
+}
+
+.contact-us {
+
+	input, textarea {
+		color: $light-header;
+		margin: 10px auto;
+		padding: 18px;
+		background-color: transparent;
+	}
+
+	input[type="name"] {
+		border: solid 1px $light-header;
+		border-radius: 3px;
+	}	
+
+	input[type="button"] {
+		background-color: $primary-color;
+		width: 100%;
+		font-weight: bold;
+		font-size: 1.8rem;
 	}
 }
 

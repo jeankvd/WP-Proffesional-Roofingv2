@@ -46,9 +46,12 @@ p {
   margin: 0;
   background-color: #292929;
   color: white;
+  font-size: 12px;
   padding: 16px; }
-  #top-bar .col-9 {
+  #top-bar .schedule {
     text-align: right; }
+    #top-bar .schedule i {
+      color: #fdc716; }
 
 #top-info {
   padding-bottom: 50px;
@@ -494,6 +497,26 @@ footer {
   /* Single Sidebar */
   .single-sidebar {
     display: none; } }
+
+/* Contact Us Page */
+.contact-us h2 span {
+  color: #fdc716; }
+
+.contact-us input, .contact-us textarea {
+  color: #fff;
+  margin: 10px auto;
+  padding: 18px;
+  background-color: transparent; }
+
+.contact-us input[type="name"] {
+  border: solid 1px #fff;
+  border-radius: 3px; }
+
+.contact-us input[type="button"] {
+  background-color: #fdc716;
+  width: 100%;
+  font-weight: bold;
+  font-size: 1.8rem; }
 
 /*  Map */
 #map {
