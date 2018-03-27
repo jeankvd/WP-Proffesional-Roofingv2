@@ -89,6 +89,32 @@ p {
   display: inline-block;
   width: 90%;
   background-color: #292929; }
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 16px; }
+    .navbar a:hover {
+      color: #fdc716; }
+
+#site-navigation {
+  padding: 0;
+  z-index: 10000; }
+  #site-navigation.active {
+    position: fixed;
+    top: 0; }
+
+#nav-quote {
+  background-color: #fdc716;
+  display: inline-block;
+  right: 0;
+  position: absolute;
+  padding: 20px; }
+  #nav-quote:hover {
+    background-color: #4f4f4f;
+    color: #fff; }
 
 /* About Us */
 #about-us {
@@ -478,6 +504,41 @@ footer {
 
 #footer-bottom {
   background-color: #1a1a1a; }
+
+.footer-subscribe span {
+  color: #fff;
+  background-color: #fdc716;
+  padding: 8px; }
+
+.footer-news span {
+  color: #fdc716; }
+
+.footer-social {
+  margin-bottom: 5%; }
+  .footer-social .social-button {
+    background: #1c202c;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    font-size: 1.3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fdc716;
+    box-shadow: 0 2px 2px #000; }
+    .footer-social .social-button i {
+      vertical-align: bottom; }
+
+.services-list {
+  padding: 0; }
+  .services-list .services-link {
+    color: #848484;
+    display: inline;
+    text-decoration: none; }
+    .services-list .services-link h6::before {
+      content: "< ";
+      display: inline; }
+    .services-list .services-link:hover {
+      color: #fdc716; }
 
 /* Media Queries */
 @media (max-width: 700px) {

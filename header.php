@@ -72,7 +72,7 @@
 					'menu_id'        => 'primary-menu',
 				) );
 			?>
-			<a href="" class="btn btn-primary">Contact Us</a>
+			<a href="#" id="nav-quote">Get A Quote</a>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 

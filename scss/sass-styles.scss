@@ -9,6 +9,7 @@ $about-bg: rgba(248, 249, 249, 0.69);
 $light-header: #fff;
 $blog-border: #f4f4f4;
 $border: darken($about-bg, 10%);
+$social-button: hsl(224, 22%, 14%);
 
 
 /* General */
@@ -136,6 +137,43 @@ p {
 	display: inline-block;
 	width: 90%;
 	background-color: $bars-color;
+
+	a {
+		color: $light-header;
+		text-decoration: none;
+		transition: all .3s ease-in-out;
+		padding: 20px;
+		font-weight: bold;
+		font-size: 16px;
+
+		&:hover {
+			color: $primary-color;
+		}
+	}
+}
+
+#site-navigation {
+	padding: 0;
+	z-index: 10000;
+	
+
+	&.active {
+		position: fixed;
+		top: 0;
+	}
+}
+
+#nav-quote {
+	background-color: $primary-color;
+	display: inline-block;
+	right: 0;
+	position: absolute;
+	padding: 20px;
+
+	&:hover {
+		background-color: lighten($bars-color, 15%);
+		color: $light-header;
+	}
 }
 
 /* About Us */
@@ -729,6 +767,64 @@ footer {
 	background-color: $footer-bottom;
 }
 
+.footer-subscribe span {
+	color: $light-header;
+	background-color: $primary-color;
+	padding: 8px;
+}
+
+footer p{
+	// font-weight: 400;
+    // font-size: 16px;
+	// line-height: 26px;
+	// font-family: 'Hind', sans-serif;
+}
+
+.footer-news {
+
+	span {
+		color: $primary-color;
+	}
+}
+
+.footer-social {
+	margin-bottom: 5%;
+
+	.social-button {
+		background: $social-button;
+		display: inline-block;
+		height: 40px;
+		width: 40px;
+		font-size: 1.3rem;
+		text-align: center;
+		border-radius: 50%;
+		color: $primary-color;
+		box-shadow: 0 2px 2px #000;
+
+		i {
+			vertical-align: bottom;
+		}
+	}
+}
+
+.services-list {
+	padding: 0;
+	
+	.services-link {
+		color: $paragraph-text;
+		display: inline;
+		text-decoration: none;
+
+		& h6::before {
+			content: "< ";
+			display: inline;
+		}
+
+		&:hover {
+			color: $primary-color;
+		}
+	}
+}
 
 /* Media Queries */
 @media (max-width: 700px) {

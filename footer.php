@@ -19,23 +19,79 @@
 		<div class="row">
 			<div class="col-3">
 				<h2>Logo</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci tempore minus provident eligendi fugiat ratione minima inventore, ad repellendus, voluptatem consequuntur esse impedit! Autem, necessitatibus dolore architecto ipsum facilis iure!</p>
+				<div class="footer-social">
+					<div class="social-button">
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+					</div>
+				</div>
 			</div>
 			<div class="col-3">
 				<h4>Services</h4>
-				<ul>
-					<li>Material Science</li>
-					<li>Material Science</li>
-					<li>Material Science</li>
-					<li>Material Science</li>
-					<li>Material Science</li>
-					<li>Material Science</li>
+				<ul class="services-list"> <!-- Services Title Loop -->
+					<?php $loop = new WP_Query(
+					array(
+						'post_type' => 'Services'
+					)
+					); ?>
+					<?php
+					$i = 0;
+					if ( $loop->have_posts() ) : while ( $loop->have_posts() && $i < 6 ) : $loop->the_post(); ?>
+
+					<a href="<?php the_permalink(); ?>" class="services-link">
+						<h6><?php the_title(); ?></h6>
+					</a>
+
+					<?php $i++; ?>
+					<?php endwhile; ?>
+
+					<?php else: ?>
+						<h3>No Services Were Found</h3>
+					<?php endif; ?>
+					<?php wp_reset_postdata(); ?> 
 				</ul>
 			</div>
 			<div class="col-3">
-				<h2>Recent News</h2>
+				<h2>Recent News</h2><!-- Blog Loop -->
+				<?php
+				$temp = $wp_query; $wp_query= null;
+				$wp_query = new WP_Query(); $wp_query->query('posts_per_page=3');
+				while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
+
+					<div class="footer-news row">
+						<div class="col-3">
+							<img src="<?php the_post_thumbnail_url(); ?>" alt="" class="img-fluid">
+						</div>
+						<div class="col-9">
+							<h5><?php the_title();?></h5>
+							<span>
+								<i class="fa fa-calendar" aria-hidden="true"></i>
+								<?php the_date('j M, Y');?>
+							</span>
+						</div>
+					</div>
+					<hr>
+
+			<?php endwhile; ?>
+			<?php wp_reset_query(); ?>
+
 			</div>
-			<div class="col-3">
+			<div class="col-3 footer-subscribe">
 				<h2>Subscribe uS</h2>
+				<div>
+					<p>Subscribe to our newsletter</p>
+					<input type="email" name="" id="">
+					<span>
+						<i class="fa fa-paper-plane" aria-hidden="true"></i>
+					</span>
+					<p>We don't do spam and Your mail id very confidential</p>
+					<hr>
+					<div class="footer-social">
+						<div class="social-button">
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div id="footer-bottom">
