@@ -373,10 +373,31 @@ p {
 .contact-call .btn, .newsletter .btn {
   color: inherit;
   background-color: #fdc716;
-  border-radius: none;
   text-transform: uppercase;
   padding: 1%;
   font-weight: bold; }
+
+.newsletter .btn, .newsletter input {
+  border-radius: 0;
+  margin-top: 0;
+  vertical-align: bottom; }
+
+.newsletter .btn {
+  height: 40px; }
+
+.newsletter input {
+  width: 50%;
+  height: 40px;
+  padding: 0 40px;
+  border-color: #fdc716;
+  outline: 0; }
+
+.newsletter i {
+  color: #fdc716;
+  font-size: 1.5rem;
+  position: absolute;
+  margin-left: 8px;
+  margin-top: 5px; }
 
 .quote-banner {
   background-color: #fdc716;
@@ -493,8 +514,16 @@ p {
 footer {
   color: #fff;
   background-color: #252525; }
+  footer p {
+    color: #9d9d9d;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    padding-top: 28px; }
   footer ul {
     margin: 0; }
+  footer hr {
+    background-color: #9d9d9d; }
   footer li {
     list-style: none; }
     footer li::before {
@@ -505,13 +534,39 @@ footer {
 #footer-bottom {
   background-color: #1a1a1a; }
 
-.footer-subscribe span {
-  color: #fff;
-  background-color: #fdc716;
-  padding: 8px; }
+#footer-subscribe {
+  width: 80%; }
+
+#footer-subscribe {
+  position: relative; }
+  #footer-subscribe input {
+    width: 100%;
+    background-color: #252525;
+    border: 1px solid black;
+    height: 40px;
+    outline: none;
+    border-radius: 0; }
+    #footer-subscribe input:focus {
+      border-color: #fdc716; }
+  #footer-subscribe span {
+    height: 40px;
+    width: 40px;
+    right: 0;
+    top: 0;
+    position: absolute;
+    color: #fff;
+    background-color: #fdc716; }
+    #footer-subscribe span i {
+      transform: translate(70%, 50%); }
+
+.footer-news h6 {
+  color: #9d9d9d; }
+  .footer-news h6:hover {
+    color: #fdc716; }
 
 .footer-news span {
-  color: #fdc716; }
+  color: #fdc716;
+  font-size: .9rem; }
 
 .footer-social {
   margin-bottom: 5%; }
@@ -533,7 +588,8 @@ footer {
   .services-list .services-link {
     color: #848484;
     display: inline;
-    text-decoration: none; }
+    text-decoration: none;
+    color: #9d9d9d; }
     .services-list .services-link h6::before {
       content: "< ";
       display: inline; }

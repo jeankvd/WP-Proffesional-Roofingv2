@@ -19,12 +19,12 @@ jQuery(document).ready(function($){
 
 // Sticky Nav
 
-const NAV = document.getElementById("site-navigation");
+// const NAV = document.getElementById("site-navigation");
 
-document.addEventListener("scroll", (e) => {
-    if (window.scrollY > 250) {
-        NAV.classList.add("active");
-    } else {
-        NAV.classList.remove("active");
-    }
-});
+// document.addEventListener("scroll", (e) => {
+//     if (window.scrollY > 250) {
+//         NAV.classList.add("active");
+//     } else {
+//         NAV.classList.remove("active");
+//     }
+// });

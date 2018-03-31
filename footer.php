@@ -51,26 +51,29 @@
 					<?php wp_reset_postdata(); ?> 
 				</ul>
 			</div>
-			<div class="col-3">
+			<div class="col-3 footer-news">
 				<h2>Recent News</h2><!-- Blog Loop -->
 				<?php
 				$temp = $wp_query; $wp_query= null;
-				$wp_query = new WP_Query(); $wp_query->query('posts_per_page=3');
+				$wp_query = new WP_Query(); $wp_query->query('posts_per_page=2');
 				while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
-
-					<div class="footer-news row">
+				<?php $i = 0 ?>
+					<div class=" row">
 						<div class="col-3">
 							<img src="<?php the_post_thumbnail_url(); ?>" alt="" class="img-fluid">
 						</div>
 						<div class="col-9">
-							<h5><?php the_title();?></h5>
+							<h6><?php the_title();?></h6>
 							<span>
 								<i class="fa fa-calendar" aria-hidden="true"></i>
 								<?php the_date('j M, Y');?>
 							</span>
 						</div>
 					</div>
-					<hr>
+					<?php if ($i == 0) { ?>
+						<hr>
+					<?php }?>
+					<?php $i++; ?>
 
 			<?php endwhile; ?>
 			<?php wp_reset_query(); ?>
@@ -80,10 +83,12 @@
 				<h2>Subscribe uS</h2>
 				<div>
 					<p>Subscribe to our newsletter</p>
-					<input type="email" name="" id="">
-					<span>
-						<i class="fa fa-paper-plane" aria-hidden="true"></i>
-					</span>
+					<div id="footer-subscribe">
+						<input type="email" name="" id="" placeholder="Email adress">
+						<span>
+							<i class="fa fa-paper-plane" aria-hidden="true"></i>
+						</span>
+					</div>
 					<p>We don't do spam and Your mail id very confidential</p>
 					<hr>
 					<div class="footer-social">

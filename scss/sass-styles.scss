@@ -9,6 +9,7 @@ $paragraph-text: #848484;
 $about-bg: rgba(248, 249, 249, 0.69);
 $light-header: #fff;
 $blog-border: #f4f4f4;
+$footer-text: #9d9d9d;
 $border: darken($about-bg, 10%);
 $social-button: hsl(224, 22%, 14%);
 
@@ -568,10 +569,38 @@ div[class="collapse show"] {
 .contact-call .btn, .newsletter .btn {
 	color: inherit;
 	background-color: $primary-color;
-	border-radius: none;
 	text-transform: uppercase;
 	padding: 1%;
 	font-weight: bold;
+}
+
+.newsletter {
+
+	.btn, input {
+		border-radius: 0;
+		margin-top: 0;
+		vertical-align: bottom;
+	}
+
+	.btn {
+		height: 40px;
+	}
+
+	input {
+		width: 50%;
+		height: 40px;
+		padding: 0 40px;
+		border-color: $primary-color;
+		outline: 0;
+	}
+
+	i {
+		color: $primary-color;
+		font-size: 1.5rem;
+		position: absolute;
+		margin-left: 8px;
+		margin-top: 5px;
+	}
 }
 
 .quote-banner {
@@ -747,8 +776,20 @@ footer {
 	color: $light-header;
 	background-color: $footer-bg;
 
+	p {
+		color: $footer-text;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 26px;
+		padding-top: 28px;
+	}
+
 	ul {
 		margin: 0;
+	}
+
+	hr {
+		background-color: $footer-text;
 	}
 
 	li {
@@ -761,6 +802,7 @@ footer {
 		&:hover {
 			color: $primary-color;
 		}
+
 	}
 }
 
@@ -768,23 +810,54 @@ footer {
 	background-color: $footer-bottom;
 }
 
-.footer-subscribe span {
-	color: $light-header;
-	background-color: $primary-color;
-	padding: 8px;
+#footer-subscribe {
+	width: 80%;
 }
 
-footer p{
-	// font-weight: 400;
-    // font-size: 16px;
-	// line-height: 26px;
-	// font-family: 'Hind', sans-serif;
-}
+#footer-subscribe {
+	position: relative;
 
+	input {
+		width: 100%;
+		background-color: $footer-bg;
+		border: 1px solid darken($default-text, 50%);
+		height: 40px;
+		outline: none;
+		border-radius: 0;
+
+		&:focus {
+			border-color: $primary-color;
+		}
+	}
+
+	span {
+		height: 40px;
+		width: 40px;
+		right: 0;
+		top: 0;
+		position: absolute;
+		color: $light-header;
+		background-color: $primary-color;
+
+		i {
+			transform: translate(70%, 50%);
+			// vertical-align: bottom;
+		}
+	}
+}
 .footer-news {
+
+	h6 {
+		color: $footer-text;
+
+		&:hover {
+			color: $primary-color;
+		}
+	}
 
 	span {
 		color: $primary-color;
+		font-size: .9rem;
 	}
 }
 
@@ -808,6 +881,7 @@ footer p{
 	}
 }
 
+
 .services-list {
 	padding: 0;
 	
@@ -815,6 +889,8 @@ footer p{
 		color: $paragraph-text;
 		display: inline;
 		text-decoration: none;
+		color: $footer-text;			
+		
 
 		& h6::before {
 			content: "< ";

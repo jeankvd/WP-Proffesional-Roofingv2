@@ -14,10 +14,6 @@
 
 get_header(); ?>
 
-<!-- Jumbtron -->
-<div class="jumbotron">
-	<h2 class="mx-auto">Jumbotron</h2>
-</div>
 <!-- About Us -->
 <div id="about-us">
     <div class="container" >
@@ -145,8 +141,11 @@ get_header(); ?>
     <div class="container" >
         <h2><?php the_field('subscribe_call_title');?></h2>
         <p><?php the_field('subscribe_call_paragraph');?></p>
-        <input type="email" name="email" id="">
-        <a href="" class="btn"><?php the_field('subscribe_call_button_text');?></a>
+        <div class="form">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <input type="email" name="email" id="" placeholder="Email Us">
+            <a href="" class="btn"><?php the_field('subscribe_call_button_text');?></a>
+        </div>
     </div>
 </div>
 
