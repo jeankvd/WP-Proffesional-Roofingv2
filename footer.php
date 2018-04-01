@@ -17,7 +17,7 @@
 
 	<footer class="site-footer container-fluid">
 		<div class="row">
-			<div class="col-3">
+			<div class="col-md-3 col-sm-12">
 				<h2>Logo</h2>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci tempore minus provident eligendi fugiat ratione minima inventore, ad repellendus, voluptatem consequuntur esse impedit! Autem, necessitatibus dolore architecto ipsum facilis iure!</p>
 				<div class="footer-social">
@@ -26,7 +26,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-3">
+			<div class="col-md-3 col-sm-12">
 				<h4>Services</h4>
 				<ul class="services-list"> <!-- Services Title Loop -->
 					<?php $loop = new WP_Query(
@@ -51,7 +51,7 @@
 					<?php wp_reset_postdata(); ?> 
 				</ul>
 			</div>
-			<div class="col-3 footer-news">
+			<div class="col-md-3 col-sm-12 footer-news">
 				<h2>Recent News</h2><!-- Blog Loop -->
 				<?php
 				$temp = $wp_query; $wp_query= null;
@@ -79,7 +79,7 @@
 			<?php wp_reset_query(); ?>
 
 			</div>
-			<div class="col-3 footer-subscribe">
+			<div class="col-md-3 col-sm-12 footer-subscribe">
 				<h2>Subscribe uS</h2>
 				<div>
 					<p>Subscribe to our newsletter</p>

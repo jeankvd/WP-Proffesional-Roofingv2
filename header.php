@@ -24,34 +24,34 @@
 
 <!-- Top Bar -->
 <div id="top-bar" class="container-fluid row">
-	<div class="col-4">
+	<div class="col-md-4 col-sm-12">
 		Welcome to Proffesional Roofing Inc.
 	</div>
-	<div class="col-8 schedule">
+	<div class="col-md-8 col-sm-12 schedule">
 		<i class="fa fa-clock-o" aria-hidden="true"></i>
 		Monday-Friday : 8:00 AM to 7:00 PM
 	</div>
 </div>
 <!-- Top Info -->
 <div id="top-info" class=" container-fluid row">
-	<div class="col-3">
+	<div class="col-md-3 col-sm-6">
 			logo
 	</div>
-		<div class="col-3 info-card">
+		<div class="col-md-3 col-sm-6 info-card">
 			<div class="col-2"><i class="fa fa-home" aria-hidden="true"></i></div>
 			<div class="col-9">
 				<h4>321, Breaking Street</h4>
 					<p>Newyork, USA 10002</p>
 			</div>
 			</div>
-			<div class="col-3 info-card">
+			<div class="col-md-3 col-sm-6 info-card">
 			<div class="col-2"><i class="fa fa-phone" aria-hidden="true"></i></div>
 			<div class="col-9">
 				<h4>Call Us On</h4>
 					<p>1-800-232-3293</p>
 			</div>
 			</div>
-			<div class="col-3 info-card">
+			<div class="col-md-3 col-sm-6 info-card">
 			<div class="col-2"><i class="fa fa-envelope" aria-hidden="true"></i></div>
 			<div class="col-9">
 				<h4>Mail Us @</h4>

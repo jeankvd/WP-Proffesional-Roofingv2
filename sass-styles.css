@@ -390,6 +390,8 @@ p {
 #faq-form {
   background-color: #f4f4f4;
   padding: 5%; }
+  #faq-form textarea {
+    height: 251px !important; }
   #faq-form h4 {
     font-weight: bold; }
   #faq-form .btn {
@@ -706,9 +708,6 @@ footer {
 .contact-us h2 span {
   color: #fdc716; }
 
-.contact-us textarea {
-  height: 251px; }
-
 .contact-us input, .contact-us textarea, .contact-us input[type="name"] {
   color: #fff;
   margin: 10px auto;
@@ -743,3 +742,26 @@ footer {
   overflow: hidden;
   height: 350px;
   width: 100%; }
+
+/* Media Queries */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  /* Header */
+  #top-bar, #top-bar .schedule {
+    text-align: center; }
+  #main-jumbo .display-3 {
+    font-size: 3rem; }
+  /* About Us */
+  #about-us img, #about-us h2 {
+    margin-bottom: 5%; }
+  /* Services */
+  #our-services .service {
+    margin-top: 5%;
+    margin-bottom: 5%; }
+  /* Latest News */
+  #blog .blog-posts {
+    margin-bottom: 5% !important; }
+    #blog .blog-posts:first-child {
+      margin-top: 5%; }
+  /* Contact Us */
+  #contact-us .text {
+    padding: 0; } }

@@ -72,7 +72,7 @@ get_header(); ?>
 						$i = 0;
 						if ( $loop->have_posts() ) : while ( $loop->have_posts() && $i < 6 ) : $loop->the_post(); ?>
 
-						<div class="col-md-4 col-sm-12">
+						<div class="col-md-4 col-sm-12 service">
 							<img src="<?php the_post_thumbnail_url(); ?>" alt="" class="img-fluid">
 							<h4><?php the_title(); ?></h4>
 							<p><?php the_field('excerpt'); ?></p>
@@ -156,7 +156,7 @@ get_header(); ?>
 	<div id="contact-us">
 		<div class="container" >
 			<div class="row">
-				<div class="col-md-5 col-sm-12">
+				<div class="col-md-5 col-sm-12 text">
 					<h2 class="title-underline"><?php the_field('contact_us_title'); ?></h2>
 					<p><?php the_field('contact_us_text'); ?>
 					</p>
