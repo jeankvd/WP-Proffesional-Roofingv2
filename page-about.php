@@ -66,7 +66,7 @@ get_header(); ?>
         </div>
         <div class="col-4">
             <div class="perk">
-                <span class="icon-holder"><i class="fa fa-user" aria-hidden="true"></i></span>
+                <span class="icon-holder"><i class="fa fa-gear" aria-hidden="true"></i></span>
                 <div class="perk-info">
                     <h4><?php the_field('perk_2_title');?></h4>
                     <p><?php the_field('perk_2_paragraph');?></p>
@@ -75,7 +75,7 @@ get_header(); ?>
         </div>
         <div class="col-4">
             <div class="perk">
-                <span class="icon-holder"><i class="fa fa-user" aria-hidden="true"></i></span>
+                <span class="icon-holder"><i class="fa fa-flag" aria-hidden="true"></i></span>
                 <div class="perk-info">
                     <h4><?php the_field('perk_3_title');?></h4>
                     <p><?php the_field('perk_3_paragraph');?></p>
@@ -84,7 +84,7 @@ get_header(); ?>
         </div>
         <div class="col-4">
             <div class="perk">
-                <span class="icon-holder"><i class="fa fa-user" aria-hidden="true"></i></span>
+                <span class="icon-holder"><i class="fa fa-camera" aria-hidden="true"></i></span>
                 <div class="perk-info">
                     <h4><?php the_field('perk_4_title');?></h4>
                     <p><?php the_field('perk_4_paragraph');?></p>
@@ -93,7 +93,7 @@ get_header(); ?>
         </div>
         <div class="col-4">
             <div class="perk">
-                <span class="icon-holder"><i class="fa fa-user" aria-hidden="true"></i></span>
+                <span class="icon-holder"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></span>
                 <div class="perk-info">
                     <h4><?php the_field('perk_5_title');?></h4>
                     <p><?php the_field('perk_5_paragraph');?></p>
@@ -102,7 +102,7 @@ get_header(); ?>
         </div>
         <div class="col-4">
             <div class="perk">
-                <span class="icon-holder"><i class="fa fa-user" aria-hidden="true"></i></span>
+                <span class="icon-holder"><i class="fa fa-stethoscope" aria-hidden="true"></i></span>
                 <div class="perk-info">
                     <h4><?php the_field('perk_6_title');?></h4>
                     <p><?php the_field('perk_6_paragraph');?></p>

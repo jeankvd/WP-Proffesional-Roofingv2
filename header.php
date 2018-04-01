@@ -80,7 +80,7 @@
 		<div class="jumbo-container">
 			<div class="jumbotron jumbotron-fluid" id="main-jumbo" style="background-image: url('http://tonatheme.com/newwp/factory/wp-content/themes/factory/images/background/3.jpg');">
 				<div class="">
-					<h1 class="display-3">Proffesional Roofing Solutions</h1>
+					<h1 class="display-3"><?php single_post_title(); ?></h1>
 				</div>
 			</div>
 		</div>

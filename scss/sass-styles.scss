@@ -34,6 +34,7 @@ p {
 
 .jumbotron {
 	margin: 0;
+	margin-bottom: 5%;
 }
 
 .title-underline {
@@ -524,16 +525,20 @@ p {
 	background-image: url("http://tonatheme.com/newwp/factory/wp-content/uploads/2017/07/4-1.jpg");
 	@extend %parallax;
 
+	p {
+		color: white;
+	}
+
 	input, textarea {
+		border-radius: 0;
 		color: $light-header;
 		margin: 10px auto;
-		padding: 18px;
+		padding: 15px;
 		background-color: transparent;
 	}
 
 	input[type="name"] {
 		border: solid 1px $light-header;
-		border-radius: 3px;
 	}	
 
 	input[type="button"] {
@@ -550,13 +555,30 @@ div[class="collapse show"] {
 }
 
 .questions {
+	padding-bottom: 5%;	
 
 	.card {
 		border: none;
 	}
+
+	.card-body {
+		color: $paragraph-text;		
+	}
+
 	.card-header {
 		margin: 10px 0;
 		border: none;
+		border-radius: 0;
+		background-color: $default-text;
+
+		.btn-link {
+			color: $primary-color;
+			text-decoration: none;
+		}
+	}
+
+	.col-6 {
+		// height: 800px;
 	}
 }
 
@@ -598,6 +620,26 @@ div[class="collapse show"] {
 	p {
 		color: $light-header;
 	}
+
+	h2, p, input, a {
+		position: relative;
+		z-index: 1;
+	}
+}
+
+.contact-call {
+	position: relative;
+
+	&::after {
+		height: 100%;
+		width: 100%;
+		content: "";
+		position: absolute;
+		background: rgba(0, 0, 0, 0.6);
+		z-index: 0;
+		top: 0;
+		left: 0;
+	}
 }
 
 .contact-call .btn, .newsletter .btn {
@@ -634,16 +676,47 @@ div[class="collapse show"] {
 		position: absolute;
 		margin-left: 8px;
 		margin-top: 5px;
+		z-index: 2;
 	}
 }
 
 .quote-banner {
 	background-color: $primary-color;
 	color: $light-header;
-	padding: 20px;
+	height: 100px;
+
+	span , a {
+		margin-top: 50px;
+		transform: translateY(-50%);
+	}
+
+	span {
+		float: left;
+		margin-top: 50px;
+		margin-left: 50px;
+		font-size: 1.2rem;
+	}
+
+	a {
+		margin-right: 50px;
+		float: right;
+		background-color: $default-text;
+		border-radius: 0;
+		padding: 10px;
+
+		&:visited {
+			color: inherit;
+		}
+	}
 }
 
 .perks, .feedback {
+	margin-top: 5%;
+
+	.row {
+		margin-top: 5%;
+	}
+
 	h2 {
 		text-align: center;
 
@@ -654,9 +727,23 @@ div[class="collapse show"] {
 	}
 }
 
+.feedback .row {
+	margin-bottom: 5%;
+}
+
 .perk {
 	border: solid 1px $border;
 	margin: 10px 0;
+	transition: all .3s ease-in-out;
+
+	&:hover {
+		border-color: $primary-color;
+
+		.icon-holder {
+			background-color: $primary-color;
+			color: #fff;
+		}
+	}
 
 	h4 {
 		font-size: 1.2rem;
@@ -671,6 +758,7 @@ div[class="collapse show"] {
 		height: 60px;
 		width: 60px;
 		text-align: center;
+		transition: all .3s ease-in-out;					
 	}
 
 	&-info {
@@ -975,23 +1063,36 @@ footer {
 /* Contact Us Page */
 
 .contact-us {
+
+	h2 {
+		font-weight: bold;		
+	}
+
 	h2 span {
 		color: $primary-color;
 	}
-}
 
-.contact-us {
+	textarea {
+		height: 251px;
+	}
 
-	input, textarea {
+	input, textarea, input[type="name"] {
 		color: $light-header;
 		margin: 10px auto;
 		padding: 18px;
 		background-color: transparent;
+		border-radius: 0;
+		border-color: $border;
+		transition: all .3s ease-in-out;
+
+		&:focus {
+			border-color: $primary-color;
+			outline: none;
+		}
 	}
 
-	input[type="name"] {
-		border: solid 1px $light-header;
-		border-radius: 3px;
+	input[type="name"] {		
+		border: solid 1px $border;
 	}	
 
 	input[type="button"] {
@@ -1000,6 +1101,15 @@ footer {
 		font-weight: bold;
 		font-size: 1.8rem;
 	}
+
+	.container {
+		margin-bottom: 5%;
+	}
+}
+
+.quick-contact {
+	border: solid 1px $border;
+	padding: 25px 25px 0px 25px;
 }
 
 /*  Map */

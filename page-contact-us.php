@@ -14,11 +14,6 @@
 
 get_header(); ?>
 
-<!-- Jumbtron -->
-<div class="jumbotron">
-	<h2 class="mx-auto">Jumbotron</h2>
-</div>
-
 <div class="contact-us">
     <div class="container">
         <div class="row">
@@ -33,7 +28,7 @@ get_header(); ?>
                     <input type="button" value="Get In Contact" class="col-md-11 col-sm-12">
                 </form>
             </div>
-            <div class="col-4">
+            <div class="col-4 quick-contact">
                 <h4>Quick Contact</h4>
                 <p>If you are passionate about helping people: through education, or preventing then you</p>
                 <!-- Top Info -->
@@ -74,8 +69,8 @@ get_header(); ?>
 </div>
 
 <div class="quote-banner">
-    <span><?php the_field('quote_banner_text');?></span>
-    <a href="#" class="btn"><?php the_field('quote_button_text');?></a>
+    <span><?php the_field('quote_banner_text', 79);?></span>
+    <a href="#" class="btn"><?php the_field('quote_button_text', 79);?></a>
 </div>
 
 <?php

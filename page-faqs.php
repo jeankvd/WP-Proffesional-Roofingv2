@@ -14,11 +14,6 @@
 
 get_header(); ?>
 
-<!-- Jumbtron -->
-<div class="jumbotron">
-	<h2 class="mx-auto">Jumbotron</h2>
-</div>
-
 <div class="container questions">
 	<div class="row">
 
