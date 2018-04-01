@@ -116,6 +116,33 @@ p {
     background-color: #4f4f4f;
     color: #fff; }
 
+/* Jumbotron */
+.jumbo-container {
+  position: relative; }
+
+#main-jumbo {
+  color: white;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #main-jumbo::after {
+    height: 100%;
+    width: 100%;
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+    top: 0;
+    left: 0; }
+  #main-jumbo h1 {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%); }
+
 /* About Us */
 #about-us {
   padding: 80px 0;

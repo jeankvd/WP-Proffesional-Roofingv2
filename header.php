@@ -76,10 +76,11 @@
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content">
-	<div class="jumbotron jumbotron-fluid" id="">
-			<div class="container">
-				<h1 class="display-3">Fluid sjumbotron</h1>
-				<p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+	<div id="content" class="site-content"><!-- BG Image WP Integration -->
+		<div class="jumbo-container">
+			<div class="jumbotron jumbotron-fluid" id="main-jumbo" style="background-image: url('http://tonatheme.com/newwp/factory/wp-content/themes/factory/images/background/3.jpg');">
+				<div class="">
+					<h1 class="display-3">Proffesional Roofing Solutions</h1>
+				</div>
 			</div>
 		</div>
