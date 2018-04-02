@@ -17,7 +17,7 @@ get_header(); ?>
 <div class="container questions">
 	<div class="row">
 
-		<div class="col-6">
+		<div class="col-md-6 col-sm-12">
 			<div id="accordion">
 				<?php for($i = 1; $i < 7;$i++) { ?>
 				<div class="card">
@@ -37,7 +37,7 @@ get_header(); ?>
 			</div>
 		</div>
 
-		<div class="col-6" id="faq-form">
+		<div class="col-md-6 col-sm-12" id="faq-form">
 			<form action="" class="row">
 				<h4><?php the_field('contact_form_title'); ?></h4>
 				<input type="text" name="name" placeholder="Name*">

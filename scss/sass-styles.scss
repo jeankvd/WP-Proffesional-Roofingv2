@@ -1177,4 +1177,80 @@ footer {
 		}
 	}
 
+	.contact-call {
+		h2 {
+			font-size: 1.5rem;
+		}
+	}
+
+	/* About Page */	
+
+	.newsletter {
+		input {
+			width: 100%;
+			margin-bottom: 5%;
+		}
+	}
+
+	.quote-banner {
+		text-align: center;
+		padding: 10%;
+		height: auto;
+
+		.btn, span {
+			float: none;
+			margin: 0;
+			transform: none;
+			text-align: center;
+		}
+
+		span {
+			display: block;
+			margin-bottom: 5%;
+		}
+	}
+
+	.client {
+		margin-bottom: 15%;
+
+		&:first-child {
+			margin-top: 10%;
+		}
+	}
+
+	/* Contact Us Page */
+	
+	.page-id-105 .contact-us {
+		form {
+			padding: 20px;
+		}
+
+		.quick-contact {
+			margin: 20px;
+		}
+	}
+
+	/* FAQs */
+
+	.questions {
+		// margin: 20px;
+
+		.card-header {
+			padding-left: 0;
+		}
+
+		button {
+			white-space: inherit;
+			text-align: left;
+		}
+	}
+
+	#faq-form {
+		margin: 13px;
+
+		.row {
+			margin: 0;
+		}
+	}
+
 }

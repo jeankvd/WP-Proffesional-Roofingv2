@@ -18,10 +18,10 @@ get_header(); ?>
 <div id="about-us">
     <div class="container" >
         <div class="row">
-            <div class="col-6">
+            <div class="col-md-6 col-sm-12">
                 <img src="<?php the_field('about_us_image', 13); ?>" alt="" class="img-fluid">
             </div>
-            <div class="col-6">
+            <div class="col-md-6 col-sm-12">
                 <h2><?php the_field('about_us_first_title', 13);?>&nbsp;<span><?php the_field('about_us_second_title', 13); ?></span></h2>
                 <p><?php the_field('about_us_text', 13); ?></p>
                 <div class="row">
@@ -55,7 +55,7 @@ get_header(); ?>
 <div class="perks container">
     <h2 class="title-underline"><?php the_field('perks_title');?></h2>    
     <div class="row">
-        <div class="col-4">
+        <div class="col-md-4 col-sm-12">
             <div class="perk">
                 <span class="icon-holder"><i class="fa fa-user" aria-hidden="true"></i></span>
                 <div class="perk-info">
@@ -64,7 +64,7 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-        <div class="col-4">
+        <div class="col-md-4 col-sm-12">
             <div class="perk">
                 <span class="icon-holder"><i class="fa fa-gear" aria-hidden="true"></i></span>
                 <div class="perk-info">
@@ -73,7 +73,7 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-        <div class="col-4">
+        <div class="col-md-4 col-sm-12">
             <div class="perk">
                 <span class="icon-holder"><i class="fa fa-flag" aria-hidden="true"></i></span>
                 <div class="perk-info">
@@ -82,7 +82,7 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-        <div class="col-4">
+        <div class="col-md-4 col-sm-12">
             <div class="perk">
                 <span class="icon-holder"><i class="fa fa-camera" aria-hidden="true"></i></span>
                 <div class="perk-info">
@@ -91,7 +91,7 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-        <div class="col-4">
+        <div class="col-md-4 col-sm-12">
             <div class="perk">
                 <span class="icon-holder"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></span>
                 <div class="perk-info">
@@ -100,7 +100,7 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-        <div class="col-4">
+        <div class="col-md-4 col-sm-12">
             <div class="perk">
                 <span class="icon-holder"><i class="fa fa-stethoscope" aria-hidden="true"></i></span>
                 <div class="perk-info">
@@ -116,19 +116,19 @@ get_header(); ?>
 <div class="feedback container">
     <h2 class="title-underline">Client Feedback</h2>
     <div class="owl-Carrousel row">
-        <div class="client col-4">
+        <div class="client col-md-4 col-sm-12">
             <p><?php the_field('client_1_feedback');?></p>
             <img src="<?php the_field('client_1_image');?>" alt="">
             <h4><?php the_field('client_1_name');?></h4>
             <h5><?php the_field('client_1_subheading');?></h5>
         </div>
-        <div class="client col-4">
+        <div class="client col-md-4 col-sm-12">
             <p><?php the_field('client_2_feedback');?></p>
             <img src="<?php the_field('client_2_image');?>" alt="">
             <h4><?php the_field('client_2_name');?></h4>
             <h5><?php the_field('client_2_subheading');?></h5>
         </div>
-        <div class="client col-4">
+        <div class="client col-md-4 col-sm-12">
             <p><?php the_field('client_3_feedback');?></p>
             <img src="<?php the_field('client_3_image');?>" alt="">
             <h4><?php the_field('client_3_name');?></h4><br>

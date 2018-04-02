@@ -17,7 +17,7 @@ get_header(); ?>
 <div class="contact-us">
     <div class="container">
         <div class="row">
-            <div class="col-md-8 col-sm-12">
+            <div class="col-md-8 col-sm-11">
                 <h2 class="">Get In <span>Touch</span></h2>
                 <form action="" class="row">
                     <input type="name" name="name" id="name" class="col-md-5 col-sm-12" placeholder="Your Name*">
@@ -28,7 +28,7 @@ get_header(); ?>
                     <input type="button" value="Get In Contact" class="col-md-11 col-sm-12">
                 </form>
             </div>
-            <div class="col-4 quick-contact">
+            <div class="col-md-4 col-sm-12 quick-contact">
                 <h4>Quick Contact</h4>
                 <p>If you are passionate about helping people: through education, or preventing then you</p>
                 <!-- Top Info -->

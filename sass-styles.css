@@ -764,4 +764,41 @@ footer {
       margin-top: 5%; }
   /* Contact Us */
   #contact-us .text {
-    padding: 0; } }
+    padding: 0; }
+  .contact-call h2 {
+    font-size: 1.5rem; }
+  /* About Page */
+  .newsletter input {
+    width: 100%;
+    margin-bottom: 5%; }
+  .quote-banner {
+    text-align: center;
+    padding: 10%;
+    height: auto; }
+    .quote-banner .btn, .quote-banner span {
+      float: none;
+      margin: 0;
+      transform: none;
+      text-align: center; }
+    .quote-banner span {
+      display: block;
+      margin-bottom: 5%; }
+  .client {
+    margin-bottom: 15%; }
+    .client:first-child {
+      margin-top: 10%; }
+  /* Contact Us Page */
+  .page-id-105 .contact-us form {
+    padding: 20px; }
+  .page-id-105 .contact-us .quick-contact {
+    margin: 20px; }
+  /* FAQs */
+  .questions .card-header {
+    padding-left: 0; }
+  .questions button {
+    white-space: inherit;
+    text-align: left; }
+  #faq-form {
+    margin: 13px; }
+    #faq-form .row {
+      margin: 0; } }
