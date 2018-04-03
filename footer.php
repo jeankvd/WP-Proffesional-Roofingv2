@@ -52,7 +52,7 @@
 				</ul>
 			</div>
 			<div class="col-md-3 col-sm-12 footer-news">
-				<h2>Recent News</h2><!-- Blog Loop -->
+				<h4>Recent News</h4><!-- Blog Loop -->
 				<?php
 				$temp = $wp_query; $wp_query= null;
 				$wp_query = new WP_Query(); $wp_query->query('posts_per_page=2');
@@ -80,7 +80,7 @@
 
 			</div>
 			<div class="col-md-3 col-sm-12 footer-subscribe">
-				<h2>Subscribe uS</h2>
+				<h4>Subscribe uS</h4>
 				<div>
 					<p>Subscribe to our newsletter</p>
 					<div id="footer-subscribe">

@@ -598,6 +598,7 @@ p {
 
 /* Footer */
 footer {
+  padding-top: 50px;
   color: #fff;
   background-color: #252525; }
   footer p {

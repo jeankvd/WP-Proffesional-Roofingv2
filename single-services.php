@@ -7,10 +7,7 @@
  * @package Theme_Boilerplate
  */
 get_header(); ?>
-<!-- Jumbtron -->
-<div class="jumbotron">
-	<h2 class="mx-auto"><?php the_title();?></h2>
-</div>
+
 
 <div class="container single-service">
     <div class="row">
