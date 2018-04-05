@@ -41,9 +41,9 @@ get_header(); ?>
 			<form action="" class="row">
 				<h4><?php the_field('contact_form_title'); ?></h4>
 				<input type="text" name="name" placeholder="Name*">
-				<input type="email" name="email" id="">
-				<input type="text" name="subject" id="">
-				<textarea name=""></textarea>
+				<input type="email" name="email" id="" placeholder="Email*">
+				<input type="text" name="subject" id="" placeholder="Subject*">
+				<textarea name="" placeholder="Your Message*"></textarea>
 				<a href="#" class="btn">Submit Now</a>
 			</form>
 		</div>

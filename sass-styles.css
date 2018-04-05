@@ -13,6 +13,9 @@ p {
   font-weight: 300;
   font-family: 'Hind', sans-serif; }
 
+.img-fluid {
+  width: 100% !important; }
+
 .jumbotron {
   margin: 0;
   margin-bottom: 5%; }
@@ -144,6 +147,9 @@ p {
     text-align: center;
     transform: translateY(-50%); }
 
+.home #main-jumbo, .page-id-79 #main-jumbo {
+  margin-bottom: 0; }
+
 /* About Us */
 #about-us {
   padding: 80px 0;
@@ -189,7 +195,7 @@ p {
 
 /* Our Services */
 #our-services {
-  margin: 7% 0; }
+  margin: 7% 0 0 0; }
   #our-services img {
     height: 190px;
     width: 370px; }
@@ -199,15 +205,24 @@ p {
     transition: color .3s ease-in-out; }
     #our-services h4:hover {
       color: #fdc716; }
+  #our-services .col-md-4 {
+    margin-bottom: 5%; }
   #our-services p {
     font-family: 'Hind';
     font-size: 16px;
     font-weight: 300; }
+  #our-services a {
+    text-decoration: none; }
 
 /*  Single Service */
-#provided-services .col-6:hover .service-icon {
-  color: #fff;
-  background-color: #fdc716; }
+.single-service h2 {
+  margin: 4% 0 4% 0; }
+
+#provided-services .col-6 {
+  margin-bottom: 4%; }
+  #provided-services .col-6:hover .service-icon {
+    color: #fff;
+    background-color: #fdc716; }
 
 #provided-services .service-info {
   padding: 0 0 0 80px; }
@@ -223,6 +238,9 @@ p {
   color: #fdc716; }
   #provided-services .service-icon i {
     vertical-align: bottom; }
+
+.tabs {
+  margin-bottom: 5%; }
 
 .nav-tabs {
   margin: 0;
@@ -247,19 +265,22 @@ p {
 
 .tab-content {
   border: solid 1px rgba(193, 202, 202, 0.69);
-  padding: 30px;
+  padding: 40px;
   margin-top: 1px; }
+  .tab-content .tab-pane {
+    margin-bottom: 20px; }
 
 /* Single Service Sidebar */
 .side-service {
   background-color: rgba(221, 225, 225, 0.69);
-  padding: 10px;
+  padding: 15px;
   margin-bottom: 2px; }
   .side-service a {
     text-decoration: none;
     transition: all .2s ease-in-out; }
   .side-service h4 {
-    font-size: 1.1rem;
+    font-size: .9rem;
+    margin-bottom: 0;
     font-weight: bold; }
   .side-service:hover a {
     color: #fdc716; }
@@ -328,17 +349,24 @@ p {
 
 /*  Blog */
 #blog {
-  margin-top: 5%; }
+  margin: 5% 0; }
   #blog span {
     color: #6b6b6b;
     font-weight: 500;
     font-size: .9rem; }
+  #blog a {
+    text-decoration: none; }
+  #blog h2 {
+    margin-bottom: 3%; }
   #blog h5 {
     transition: color .3s ease-in-out; }
     #blog h5:hover {
       color: #fdc716; }
   #blog .blog-posts {
-    border: 1px solid #f4f4f4; }
+    border: 1px solid #f4f4f4;
+    transition: box-shadow .5s ease-in-out; }
+    #blog .blog-posts:hover {
+      box-shadow: grey 2px 20px 50px; }
   #blog .blog-information {
     padding: 20px; }
 
@@ -526,48 +554,72 @@ p {
   display: inline-block; }
 
 /* Projects Page */
-#latest-projects-page .project-wrapper {
-  padding: 10px; }
-
-#latest-projects-page .project-overlay {
-  width: 100%;
-  height: 0%;
-  transition: height .3s ease-in-out; }
-  #latest-projects-page .project-overlay::after {
-    content: none; }
-
-#latest-projects-page .project {
-  color: #fff; }
-  #latest-projects-page .project h6 {
-    top: 30%;
-    font-size: 1.5rem;
-    font-weight: bold;
+#latest-projects-page {
+  padding-bottom: 80px !important; }
+  #latest-projects-page .title-underline {
     text-align: center;
-    width: 100%; }
-  #latest-projects-page .project:hover .project-overlay {
-    height: 100%; }
-  #latest-projects-page .project:hover .buttons {
-    opacity: 1;
-    bottom: 30%; }
-
-#latest-projects-page .buttons {
-  position: absolute;
-  bottom: 0%;
-  opacity: 0;
-  font-size: 2em;
-  transition: all .3s .3s ease-in-out;
-  width: 100%;
-  text-align: center; }
-  #latest-projects-page .buttons i {
-    text-align: center;
-    background-color: #fdc716;
-    padding: 10px;
-    border-radius: 50%;
+    margin-bottom: 2%; }
+    #latest-projects-page .title-underline::after {
+      right: 0;
+      margin: 0 auto; }
+  #latest-projects-page .project-wrapper {
+    padding: 10px; }
+  #latest-projects-page .project-overlay {
+    width: 100%;
+    height: 0%;
+    transition: height .3s ease-in-out; }
+    #latest-projects-page .project-overlay::after {
+      content: none; }
+  #latest-projects-page .project {
     color: #fff; }
+    #latest-projects-page .project h6 {
+      top: 30%;
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-align: center;
+      width: 100%; }
+    #latest-projects-page .project:hover .project-overlay {
+      height: 100%; }
+    #latest-projects-page .project:hover .buttons {
+      opacity: 1;
+      bottom: 30%; }
+  #latest-projects-page .buttons {
+    position: absolute;
+    bottom: 0%;
+    opacity: 0;
+    font-size: 1.2em;
+    transition: all .3s .3s ease-in-out;
+    width: 100%;
+    text-align: center; }
+    #latest-projects-page .buttons i {
+      text-align: center;
+      background-color: #fdc716;
+      padding: 10px;
+      border-radius: 50%;
+      color: #fff; }
 
 /* Single Project */
+#single-latest-project img {
+  margin-bottom: 15px; }
+
 #single-latest-project .col-3 img {
   margin-bottom: 15px; }
+
+#single-latest-project h4 {
+  padding: 10px 0;
+  font-size: 1.2rem; }
+
+#single-latest-project ul {
+  margin: 0;
+  margin-bottom: 15px; }
+
+#single-latest-project li {
+  list-style: none;
+  color: #848484; }
+  #single-latest-project li::before {
+    content: "* ";
+    color: #fdc716;
+    /* or whatever color you prefer */ }
 
 /* Blog */
 .blog-post {
@@ -580,6 +632,11 @@ p {
 
 .blog-info {
   padding: 15px; }
+  .blog-info a {
+    text-decoration: none;
+    transition: .3s all ease-in-out; }
+    .blog-info a:hover {
+      color: #fdc716; }
 
 .blog-meta {
   display: block;

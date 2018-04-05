@@ -32,6 +32,10 @@ p {
 	font-family: 'Hind', sans-serif;
 }
 
+.img-fluid {
+	width: 100%!important;
+}
+
 .jumbotron {
 	margin: 0;
 	margin-bottom: 5%;
@@ -213,6 +217,10 @@ p {
 	}
 }
 
+.home #main-jumbo, .page-id-79 #main-jumbo {
+	margin-bottom: 0;
+}
+
 /* About Us */
 
 #about-us {
@@ -277,7 +285,8 @@ p {
 /* Our Services */
 
 #our-services {
-	margin: 7% 0;
+	margin: 7% 0 0 0;
+
 
 	img {
 		height: 190px;
@@ -294,18 +303,40 @@ p {
 		}
 	}
 
+	.col-md-4 {
+		margin-bottom: 5%;
+	}
+
 	p {
 		font-family: 'Hind';
 		font-size: 16px;
 		font-weight: 300;
 	}
+
+	a {
+		text-decoration: none;			
+	}
 }
 
 /*  Single Service */
 
+.single-service {
+	h2 {
+		margin: 4% 0 4% 0;
+	}
+
+	// get high res pics
+	// img {
+	// 	width: 100%;
+	// }
+}
+
 #provided-services {
+	
 
 	.col-6 {
+		margin-bottom: 4%;
+		
 		&:hover .service-icon {
 			color: $light-header;
 			background-color: $primary-color;
@@ -330,6 +361,10 @@ p {
 			vertical-align: bottom;
 		}
 	}
+}
+
+.tabs {
+	margin-bottom: 5%;
 }
 
 .nav-tabs {
@@ -363,14 +398,17 @@ p {
 
 .tab-content {
 	border: solid 1px darken($about-bg, 20%);
-	padding: 30px;
+	padding: 40px;
 	margin-top: 1px;
+	.tab-pane {
+		margin-bottom: 20px;
+	}
 }
 
 /* Single Service Sidebar */
 .side-service {
 	background-color: darken($about-bg, 10%);
-	padding: 10px;
+	padding: 15px;
 	margin-bottom: 2px;
 
 	a {
@@ -379,9 +417,11 @@ p {
 	}
 
 	h4{
-		font-size: 1.1rem;
+		font-size: .9rem;
+		margin-bottom: 0;
 		font-weight: bold;
 	}
+
 
 	&:hover a {
 		color: $primary-color;
@@ -488,12 +528,20 @@ p {
 /*  Blog */
 
 #blog {
-	margin-top: 5%;
+	margin: 5% 0;
 
 	span {
 		color: darken($paragraph-text, 10%);
 		font-weight: 500;
 		font-size: .9rem;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	h2 {
+		margin-bottom: 3%;
 	}
 
 	h5 {
@@ -506,6 +554,11 @@ p {
 
 	.blog-posts {
 		border: 1px solid $blog-border;
+		transition: box-shadow .5s ease-in-out;
+
+		&:hover {
+			box-shadow: grey 2px 20px 50px;
+		}
 	}
 
 	.blog-information {
@@ -790,7 +843,17 @@ div[class="collapse show"] {
 /* Projects Page */
 
 #latest-projects-page {
+	padding-bottom: 80px !important;
 
+	.title-underline {
+		text-align: center;
+		margin-bottom: 2%;
+
+		&::after {
+			right: 0;
+			margin: 0 auto;
+		}
+	}
 
 	img {
 	}
@@ -814,7 +877,7 @@ div[class="collapse show"] {
 
 		h6 {
 			top: 30%;
-			font-size: 1.5rem;
+			font-size: 1.3rem;
 			font-weight: bold;
 			text-align: center;
 			width: 100%;
@@ -834,7 +897,7 @@ div[class="collapse show"] {
 		position: absolute;
 		bottom: 0%;
 		opacity: 0;
-		font-size: 2em;
+		font-size: 1.2em;
 		transition: all .3s .3s ease-in-out;
 		width: 100%;
 		text-align: center;
@@ -852,8 +915,32 @@ div[class="collapse show"] {
 /* Single Project */
 
 #single-latest-project {
+	img {
+		margin-bottom: 15px;		
+	}
+
 	.col-3 img {
 		margin-bottom: 15px;
+	}
+
+	h4 {
+		padding: 10px 0;
+		font-size: 1.2rem;
+	}
+
+	ul {
+		margin: 0;
+		margin-bottom: 15px;
+	}
+
+	li {
+		list-style: none;
+		color: $paragraph-text;
+
+		&::before {
+			content: "* ";
+			color: $primary-color; /* or whatever color you prefer */
+		  }
 	}
 }
 
@@ -876,6 +963,15 @@ div[class="collapse show"] {
 
 .blog-info {
 	padding: 15px;
+
+	a {
+		text-decoration: none;
+		transition: .3s all ease-in-out;
+
+		&:hover {
+			color: $primary-color;
+		}
+	}
 }
 
 .blog-meta {

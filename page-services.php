@@ -17,14 +17,6 @@ get_header(); ?>
 <!-- Our Services -->
 <div id="our-services">
     <div class="container" >
-        <div class="row ">
-            <div class="col-md-4 col-sm-12">
-                <h2 class="title-underline"><?php the_field('services_title', 13); ?></h2>
-            </div>
-            <div class="col-md-8 col-sm-12">
-                <p><?php the_field('services_text', 13); ?></p>
-            </div>
-        </div>
         <div class="row">
             <?php $loop = new WP_Query(
                 array(
@@ -37,7 +29,7 @@ get_header(); ?>
 
                 <div class="col-md-4 col-sm-12">
                     <img src="<?php the_post_thumbnail_url(); ?>" alt="" class="img-fluid">
-                    <h4><?php the_title(); ?></h4>
+                    <a href="<?php the_permalink(); ?>"><h4><?php the_title(); ?></h4></a>
                     <p><?php the_field('excerpt'); ?></p>
                 </div>
 

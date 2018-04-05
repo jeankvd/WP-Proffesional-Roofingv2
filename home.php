@@ -22,7 +22,7 @@ get_header();
 
 			<div class="blog-post">
 				<span class="date"><?php the_date('F j');?></span>
-				<img src="<?php the_post_thumbnail_url("medium"); ?>" alt="" class="img-fluid">
+				<img src="<?php the_post_thumbnail_url("full"); ?>" alt="" class="img-fluid">
 				<div class="blog-info">
 					<a href="<?php the_permalink();?>"><h5><?php the_title(); ?></h5></a>
 					<p><?php the_excerpt();?></p>

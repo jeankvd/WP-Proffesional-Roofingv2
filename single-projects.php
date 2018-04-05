@@ -7,20 +7,15 @@
  * @package Theme_Boilerplate
  */
 get_header(); ?>
-<!-- Jumbtron -->
-<div class="jumbotron">
-	<h2 class="mx-auto">Jumbotron</h2>
-</div>
 
 <div class="container" id="single-latest-project">
     <div class="row">
             <?php while ( have_posts() ) : the_post(); ?>
-                <div class="col-md-9 col-sm-12">            
-                    <img src=" <?php the_post_thumbnail_url("medium"); ?> " alt="" class="img-responsive">
-                    <h1><?php the_title(); ?></h1>
+                <div class="col-md-8 col-sm-12">            
+                    <img src=" <?php the_post_thumbnail_url("full"); ?> " alt="" class="img-responsive">
                     <p> <?php the_content(); ?> </p>
                 </div>
-                <div class="col-md-3 col-sm-12">
+                <div class="col-md-4 col-sm-12">
                     <img src="<?php the_field("sidebar_picture"); ?>" alt="" class="img-fluid">
                     <img src="<?php the_field("sidebar_picture_2"); ?>" alt="" class="img-fluid"> 
                     <p><?php the_field("sidebar_text"); ?></p>

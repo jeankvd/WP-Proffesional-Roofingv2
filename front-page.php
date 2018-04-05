@@ -137,9 +137,9 @@ get_header(); ?>
 
 			<div class="col-md-4 col-sm-12">
 				<div class="blog-posts">
-					<img src="<?php the_post_thumbnail_url(); ?>" alt="" class="img-fluid">
+					<img src="<?php the_post_thumbnail_url("full"); ?>" alt="" class="img-fluid">
 					<div class="blog-information">
-						<h5><?php the_title();?></h5>
+						<a href="<?php the_permalink();?>"><h5><?php the_title();?></h5></a>
 						<span>by <?php the_author();?> | <?php the_date('F j');?></span>
 						<p><?php the_excerpt(); ?></p>
 					</div>

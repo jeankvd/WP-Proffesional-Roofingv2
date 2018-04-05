@@ -44,7 +44,7 @@ get_header(); ?>
         </div>
         <div class="col-md-9 col-sm-12">
         <?php while ( have_posts() ) : the_post(); ?>
-        <img src=" <?php the_post_thumbnail_url("medium"); ?> " alt="" class="img-responsive">
+        <img src=" <?php the_post_thumbnail_url("full"); ?> " alt="" class="img-responsive">
         <p> <?php the_content(); ?> </p>
         <?php endwhile; // End of the loop.?>
         <!-- Additional Content -->
@@ -64,7 +64,7 @@ get_header(); ?>
                     <i class="fa fa-cog" aria-hidden="true"></i>
                 </div>
                 <div class="service-info">
-                    <h4>Experienced</h4>
+                    <h4>Proffesional Services</h4>
                     <p>Doin' it our way. Nothin's gonna turn us back now. Straight ahead and on the track now.</p>
                 </div>
             </div>
@@ -73,7 +73,7 @@ get_header(); ?>
                     <i class="fa fa-deaf" aria-hidden="true"></i>
                 </div>
                 <div class="service-info">
-                    <h4>Experienced</h4>
+                    <h4>Public Projects</h4>
                     <p>Doin' it our way. Nothin's gonna turn us back now. Straight ahead and on the track now.</p>
                 </div>
             </div>
@@ -82,7 +82,7 @@ get_header(); ?>
                     <i class="fa fa-pencil" aria-hidden="true"></i>
                 </div>
                 <div class="service-info">
-                    <h4>Experienced</h4>
+                    <h4>Superior Quality</h4>
                     <p>Doin' it our way. Nothin's gonna turn us back now. Straight ahead and on the track now.</p>
                 </div>
             </div>
