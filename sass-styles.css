@@ -1,12 +1,6 @@
 /* TODOS
-	1-Sticky Menu
-	3- Tablet Testing
-	4- Cross Browser Testing
+	1-Sticky Menu??
 	5- Top info crooked
-	8-Contact Us 540 overlaying text
-	9-Faqs 540 overlaying text	
-	10-Services Links
-	11-Firefox input p0 m0
 */
 /* Color Variables  test*/
 /* General */
@@ -26,7 +20,8 @@ p {
   font-family: 'Hind', sans-serif; }
 
 .menu-toggle {
-  width: auto; }
+  width: auto;
+  display: none !important; }
 
 .show {
   display: inherit !important; }
@@ -126,9 +121,21 @@ p {
       border-radius: 50%;
       max-width: 100%;
       margin-bottom: 20px; }
+    #top-info .info-card .col-3 {
+      border: dashed 1px #fdc716;
+      height: 50px;
+      width: 50px;
+      text-align: center;
+      border-radius: 50%;
+      max-width: 100%;
+      margin-bottom: 20px; }
     #top-info .info-card .col-9 {
       position: absolute;
       margin-left: 10px; }
+
+/* Icons Holder */
+.icons-holder {
+  width: 700px; }
 
 /* Navbar */
 .navbar {
@@ -243,9 +250,6 @@ p {
 /* Our Services */
 #our-services {
   margin: 7% 0 0 0; }
-  #our-services img {
-    height: 190px;
-    width: 370px; }
   #our-services h4 {
     font-size: 18px;
     margin: 15px 0;
@@ -350,6 +354,12 @@ p {
   padding-bottom: 40px;
   background-image: url("http://tonatheme.com/newwp/factory/wp-content/uploads/2017/07/5-1.jpg"); }
 
+.owl-nav div {
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 15px;
+  font-size: 2rem; }
+
 .project {
   position: relative;
   overflow: hidden; }
@@ -441,6 +451,9 @@ p {
 /* Faq */
 .questions {
   padding-bottom: 5%; }
+  .questions button {
+    white-space: inherit;
+    text-align: left; }
   .questions .card {
     border: none; }
   .questions .card-body {
@@ -455,16 +468,17 @@ p {
       text-decoration: none; }
 
 #faq-form input, #faq-form textarea {
-  margin-bottom: 5%;
+  margin-bottom: 20px;
   width: 100%;
-  padding: 2%;
+  padding: 20px;
   border-radius: 0;
   border: none;
   font-size: .95rem; }
 
 #faq-form {
   background-color: #f4f4f4;
-  padding: 5%; }
+  padding: 5%;
+  -moz-padding-top: 5px; }
   #faq-form textarea {
     height: 251px !important; }
   #faq-form h4 {
@@ -836,7 +850,6 @@ footer {
   color: #fdc716; }
 
 .contact-us input, .contact-us textarea, .contact-us input[type="name"] {
-  color: #fff;
   margin: 10px auto;
   padding: 18px;
   background-color: transparent;
@@ -851,6 +864,7 @@ footer {
   border: solid 1px rgba(221, 225, 225, 0.69); }
 
 .contact-us input[type="button"] {
+  color: #fff;
   background-color: #fdc716;
   width: 100%;
   font-weight: bold;
@@ -870,9 +884,45 @@ footer {
   height: 350px;
   width: 100%; }
 
-/* Media Queries */
+@media (max-width: 940px) {
+  .icons-holder {
+    width: 100%;
+    margin-top: 15px; }
+    .icons-holder .info-card:nth-child(3) {
+      margin-left: 0 !important; } }
+
+@media (max-width: 992px) and (min-width: 768px) {
+  .nav-tabs .nav-item:not(:last-child) {
+    margin-right: 0px; }
+  .feedback {
+    text-align: center; }
+    .feedback img {
+      position: relative; }
+    .feedback h4, .feedback h5 {
+      margin-left: 0; }
+  .quick-contact {
+    padding: 10px; }
+    .quick-contact .info-card {
+      margin-bottom: 20px; } }
+
+@media (max-width: 768px) {
+  .quote-banner {
+    text-align: center;
+    padding: 10%;
+    height: auto; }
+    .quote-banner .btn, .quote-banner span {
+      float: none;
+      margin: 0;
+      transform: none;
+      text-align: center; }
+    .quote-banner span {
+      display: block;
+      margin-bottom: 5%; } }
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
   /* Menu */
+  .menu-toggle {
+    display: inherit !important; }
   .main-navigation #nav-quote {
     top: 0; }
   .main-navigation a:not(#nav-quote) {
@@ -939,11 +989,14 @@ footer {
   /* FAQs */
   .questions .card-header {
     padding-left: 0; }
-  .questions button {
-    white-space: inherit;
-    text-align: left; }
   #faq-form {
     margin: 13px; }
     #faq-form .row {
       margin: 0; }
   /* Main Navigation */ }
+
+/* Cross Browser Styles  */
+@-moz-document url-prefix() {
+  #faq-form {
+    padding-top: 50px;
+    padding-bottom: 50px; } }

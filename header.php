@@ -37,27 +37,29 @@
 	<div class="col-md-3 col-sm-6">
 		<img src="https://irp-cdn.multiscreensite.com/ec49f2c2/dms3rep/multi/mobile/logo-400x170.png" alt="" id="header-logo">
 	</div>
-		<div class="col-md-3 col-sm-6 info-card">
-			<div class="col-2"><i class="fa fa-home" aria-hidden="true"></i></div>
+	<div class="row ml-auto icons-holder">
+		<div class="col-md-4 col-sm-6 info-card">
+			<div class="col-3"><i class="fa fa-home" aria-hidden="true"></i></div>
 			<div class="col-9">
 				<h4>321, Breaking Street</h4>
 					<p>Newyork, USA 10002</p>
 			</div>
 			</div>
-			<div class="col-md-3 col-sm-6 info-card">
-			<div class="col-2"><i class="fa fa-phone" aria-hidden="true"></i></div>
+		<div class="col-md-4 col-sm-6 info-card">
+			<div class="col-3"><i class="fa fa-phone" aria-hidden="true"></i></div>
 			<div class="col-9">
-				<h4>Call Us On</h4>
+					<h4>Call Us On</h4>
 					<p>1-800-232-3293</p>
 			</div>
-			</div>
-			<div class="col-md-3 col-sm-6 info-card">
-			<div class="col-2"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+		</div>
+		<div class="col-md-4 col-sm-6 info-card ml-auto">
+			<div class="col-3"><i class="fa fa-envelope" aria-hidden="true"></i></div>
 			<div class="col-9">
 				<h4>Mail Us @</h4>
 				<p>SupportUs@gmail.com</p>
-				</div>	
-			</div>		
+			</div>	
+		</div>	
+	</div>
 </div>
 
 <div id="page" class="site">

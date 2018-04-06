@@ -22,7 +22,7 @@ get_header(); ?>
                 if ( $loop->have_posts() ) : while ( $loop->have_posts() && $i < 6 ) : $loop->the_post(); ?>
 
                 <div class="side-service">
-                    <a href="<?php get_permalink();?>"><h4><?php the_title(); ?></h4></a>
+                    <a href="<?php the_permalink();?>"><h4><?php the_title(); ?></h4></a>
                 </div>
 
                 <?php $i++; ?>

@@ -34,7 +34,7 @@ get_header(); ?>
                 <!-- Top Info -->
                 <div id="top-info" class=" container-fluid row">
                     <div class="col-12 info-card">
-                        <div class="col-2">
+                        <div class="col-3">
                         <i class="fa fa-home" aria-hidden="true"></i>
                         </div>
                         <div class="col-9">
@@ -43,14 +43,14 @@ get_header(); ?>
                         </div>
                     </div>
                     <div class="col-12 info-card">
-                        <div class="col-2"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                        <div class="col-3"><i class="fa fa-phone" aria-hidden="true"></i></div>
                         <div class="col-9">
                         <h4>Call Us On</h4>
                         <p>1-800-232-3293</p>
                         </div>
                     </div>
                     <div class="col-12 info-card">
-                        <div class="col-2"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                        <div class="col-3"><i class="fa fa-envelope" aria-hidden="true"></i></div>
                         <div class="col-9">
                         <h4>Mail Us @</h4>
                         <p>SupportUs@gmail.com</p>

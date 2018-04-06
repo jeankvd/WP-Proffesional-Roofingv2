@@ -1,13 +1,7 @@
 // 2 cmd -
 /* TODOS
-	1-Sticky Menu
-	3- Tablet Testing
-	4- Cross Browser Testing
+	1-Sticky Menu??
 	5- Top info crooked
-	8-Contact Us 540 overlaying text
-	9-Faqs 540 overlaying text	
-	10-Services Links
-	11-Firefox input p0 m0
 */
 /* Color Variables  test*/
 $primary-color: #fdc716;
@@ -49,6 +43,7 @@ p {
 
 .menu-toggle {
 	width: auto;
+	display: none!important;
 }
 
 .show {
@@ -177,7 +172,21 @@ p {
 			transition: color .3s ease-in-out;
 		}
 
+
 		.col-2 {
+			$icon-size: 50px;
+			$icon-size: 50px;
+			border: dashed 1px $primary-color;
+			height: $icon-size;
+			width: $icon-size;
+			text-align: center;
+			border-radius: 50%;
+			max-width: 100%;
+			margin-bottom: 20px;	
+
+		}
+
+		.col-3 {
 			$icon-size: 50px;
 			border: dashed 1px $primary-color;
 			height: $icon-size;
@@ -193,6 +202,12 @@ p {
 			margin-left: 10px;
 		}
 	}
+}
+
+/* Icons Holder */
+
+.icons-holder {
+	width: 700px;
 }
 
 /* Navbar */
@@ -351,8 +366,8 @@ p {
 
 
 	img {
-		height: 190px;
-		width: 370px;
+		// height: 190px;
+		// width: 370px;
 	}
 
 	h4 {
@@ -517,6 +532,13 @@ p {
 	@extend %parallax;
 }
 
+.owl-nav div {
+	display: inline-block;
+	margin-right: 20px;
+	margin-top: 15px;
+	font-size: 2rem;
+}
+
 .project {
 	position: relative;
 	overflow: hidden;
@@ -672,6 +694,11 @@ div[class="collapse show"] {
 .questions {
 	padding-bottom: 5%;	
 
+	button {
+		white-space: inherit;
+		text-align: left;
+	}
+
 	.card {
 		border: none;
 	}
@@ -698,9 +725,9 @@ div[class="collapse show"] {
 }
 
 #faq-form input , #faq-form textarea {
-	margin-bottom: 5%;
+	margin-bottom: 20px;
 	width: 100%;
-	padding: 2%;
+	padding: 20px;
 	border-radius: 0;
 	border: none;
 	font-size: .95rem;
@@ -708,7 +735,8 @@ div[class="collapse show"] {
 
 #faq-form {
 	background-color: $blog-border;	
-	padding: 5% ;
+	padding: 5%;
+	-moz-padding-top: 5px;
 
 	textarea {
 		height: 251px!important;
@@ -1273,7 +1301,6 @@ footer {
 	}
 
 	input, textarea, input[type="name"] {
-		color: $light-header;
 		margin: 10px auto;
 		padding: 18px;
 		background-color: transparent;
@@ -1292,6 +1319,7 @@ footer {
 	}	
 
 	input[type="button"] {
+		color: $light-header;
 		background-color: $primary-color;
 		width: 100%;
 		font-weight: bold;
@@ -1317,13 +1345,75 @@ footer {
     width: 100%;
 }
 
-/* Media Queries */
+@media (max-width: 940px) {
+	.icons-holder {
+		width: 100%;
+		margin-top: 15px;
+
+		.info-card:nth-child(3) {
+			margin-left: 0!important;
+		}
+	}
+}
+
+@media (max-width: 992px) and (min-width: 768px){
+
+	.nav-tabs .nav-item:not(:last-child) {
+		margin-right: 0px;
+	}
+
+	.feedback {
+		text-align: center;
+
+		img {
+			position: relative;
+		}
+
+		h4, h5 {
+			margin-left: 0;
+		}
+	}
+
+	.quick-contact {
+		padding: 10px;
+
+		.info-card {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+@media (max-width: 768px){
+
+	.quote-banner {
+		text-align: center;
+		padding: 10%;
+		height: auto;
+
+		.btn, span {
+			float: none;
+			margin: 0;
+			transform: none;
+			text-align: center;
+		}
+
+		span {
+			display: block;
+			margin-bottom: 5%;
+		}
+	}
+
+}
 
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 568px) {
 
 	/* Menu */ 
+
+	.menu-toggle {
+		display: inherit !important;
+	}
 
 	.main-navigation {
 
@@ -1464,10 +1554,10 @@ footer {
 			padding-left: 0;
 		}
 
-		button {
-			white-space: inherit;
-			text-align: left;
-		}
+		// button {
+		// 	white-space: inherit;
+		// 	text-align: left;
+		// }
 	}
 
 	#faq-form {
@@ -1483,5 +1573,13 @@ footer {
 	.main-navigation ul {
 		// display: inherit;
 	}
+}
 
+/* Cross Browser Styles  */
+
+@-moz-document url-prefix() {
+    #faq-form {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
 }
