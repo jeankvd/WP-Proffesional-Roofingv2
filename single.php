@@ -7,16 +7,12 @@
  * @package Theme_Boilerplate
  */
 get_header(); ?>
-<!-- Jumbtron -->
-<div class="jumbotron">
-	<h2 class="mx-auto">Jumbotron</h2>
-</div>
 
 <div class="container">
     <div class="row">
 			<?php while ( have_posts() ) : the_post(); ?>
 			<div class="col-md-9 col-sm-12">			
-				<img src=" <?php the_post_thumbnail_url("medium"); ?> " alt="" class="img-responsive">
+				<img src=" <?php the_post_thumbnail_url("full"); ?> " alt="" class="img-responsive">
 				<h1><?php the_title(); ?></h1>
 				<p> <?php the_content(); ?> </p>
 			</div>

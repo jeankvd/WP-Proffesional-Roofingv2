@@ -35,7 +35,7 @@
 <!-- Top Info -->
 <div id="top-info" class=" container-fluid row">
 	<div class="col-md-3 col-sm-6">
-			logo
+		<img src="https://irp-cdn.multiscreensite.com/ec49f2c2/dms3rep/multi/mobile/logo-400x170.png" alt="" id="header-logo">
 	</div>
 		<div class="col-md-3 col-sm-6 info-card">
 			<div class="col-2"><i class="fa fa-home" aria-hidden="true"></i></div>
@@ -65,7 +65,7 @@
 
 	<header id="masthead" class="site-header">
 		<nav id="site-navigation" class="main-navigation navbar">
-			<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'theme-boilerplate' ); ?></button> -->
+		<a class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" id="menu-toggle">Menu</a>
 			<?php
 				wp_nav_menu( array(
 					'theme_location' => 'menu-1',

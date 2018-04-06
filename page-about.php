@@ -27,17 +27,17 @@ get_header(); ?>
                 <div class="row">
                     <div class="col-4 statistic">
                         <span class="icon-holder"><i class="fa fa-user" aria-hidden="true"></i></span>
-                        <span><?php the_field('workers', 13);?></span>
+                        <span class="statistic-number"><?php the_field('workers', 13);?></span>
                         <span>Engineers & Workers</span>
                     </div>
                     <div class="col-4 statistic">
                         <span class="icon-holder"><i class="fa fa-building" aria-hidden="true"></i></span>
-                        <span><?php the_field('offices', 13);?></span>
-                        <span>Offices</span>
+                        <span class="statistic-number"><?php the_field('offices', 13);?></span>
+                        <span >Offices</span>
                     </div>
                     <div class="col-4 statistic">
                         <span class="icon-holder"><i class="fa fa-gavel" aria-hidden="true"></i></span>
-                        <span><?php the_field('projects', 13);?></span>
+                        <span class="statistic-number"><?php the_field('projects', 13);?></span>
                         <span>Projects Completed</span>
                     </div>
                 </div>

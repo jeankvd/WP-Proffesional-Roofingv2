@@ -18,13 +18,8 @@
 	<footer class="site-footer container-fluid">
 		<div class="row">
 			<div class="col-md-3 col-sm-12">
-				<h2>Logo</h2>
+				<img src="https://irp-cdn.multiscreensite.com/ec49f2c2/dms3rep/multi/mobile/logo-400x170.png" alt="" id="footer-logo">
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci tempore minus provident eligendi fugiat ratione minima inventore, ad repellendus, voluptatem consequuntur esse impedit! Autem, necessitatibus dolore architecto ipsum facilis iure!</p>
-				<div class="footer-social">
-					<div class="social-button">
-						<i class="fa fa-twitter" aria-hidden="true"></i>
-					</div>
-				</div>
 			</div>
 			<div class="col-md-3 col-sm-12">
 				<h4>Services</h4>
@@ -63,7 +58,7 @@
 							<img src="<?php the_post_thumbnail_url(); ?>" alt="" class="img-fluid">
 						</div>
 						<div class="col-9">
-							<h6><?php the_title();?></h6>
+							<a href="<?php the_permalink();?>"><h6><?php the_title();?></h6></a>
 							<span>
 								<i class="fa fa-calendar" aria-hidden="true"></i>
 								<?php the_date('j M, Y');?>
@@ -80,7 +75,7 @@
 
 			</div>
 			<div class="col-md-3 col-sm-12 footer-subscribe">
-				<h4>Subscribe uS</h4>
+				<h4>Subscribe to Us</h4>
 				<div>
 					<p>Subscribe to our newsletter</p>
 					<div id="footer-subscribe">
@@ -92,9 +87,18 @@
 					<p>We don't do spam and Your mail id very confidential</p>
 					<hr>
 					<div class="footer-social">
-						<div class="social-button">
+						<a href=""><div class="social-button">
 							<i class="fa fa-twitter" aria-hidden="true"></i>
-						</div>
+						</div></a>
+						<a href=""><div class="social-button">
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+						</div></a>
+						<a href=""><div class="social-button">
+							<i class="fa fa-instagram" aria-hidden="true"></i>
+						</div></a>
+						<a href=""><div class="social-button">
+							<i class="fa fa-linkedin" aria-hidden="true"></i>
+						</div></a>
 					</div>
 				</div>
 			</div>

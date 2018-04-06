@@ -17,6 +17,15 @@ jQuery(document).ready(function($){
     })
   });
 
+const menuToggle = document.getElementById('menu-toggle');
+const menu = document.getElementById("primary-menu").firstChild;
+
+menuToggle.addEventListener("click", () => {
+    menu.classList.toggle("show");
+});
+
+
+
 // Sticky Nav
 
 // const NAV = document.getElementById("site-navigation");
